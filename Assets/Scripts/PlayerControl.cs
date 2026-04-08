@@ -27,8 +27,8 @@ public class PlayerControl : MonoBehaviour
         if (canMove)
         {
             // Set input directions to move direction 
-            moveDir.x = InputSystem.actions["Move"].ReadValue<Vector2>().x;
-            moveDir.z = InputSystem.actions["Move"].ReadValue<Vector2>().y;
+            moveDir = transform.right * InputSystem.actions["Move"].ReadValue<Vector2>().x
+                + transform.forward * InputSystem.actions["Move"].ReadValue<Vector2>().y;
 
             rb.linearVelocity = 
                 moveDir.normalized * moveSpeed;
