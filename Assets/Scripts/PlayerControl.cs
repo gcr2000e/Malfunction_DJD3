@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -7,18 +8,34 @@ public class PlayerControl : MonoBehaviour
     [SerializeField]
     private float moveSpeed;
 
+    [Header("Combat")]
+    [SerializeField]
+    private GameObject hitbox;
+    [SerializeField]
+    private float attackTime;
+    [SerializeField]
+    private float attackCooldown;
+    private IEnumerator attackCoroutine;
+
+    // Count the hit of the combo
+    private uint attackCount = 0;
+
+    private bool canAttack = true;
+
     [Header ("Dodge")]
     [SerializeField]
     private float dodgeStrenght;
     [SerializeField]
     private float dodgeCooldown;
     private float dodgeCooldownTimer;
+    private IEnumerator dodgeCoroutine;
 
     private Rigidbody rb;
 
     private bool canMove = false;
 
     private bool queuedAttack = false;
+
 
     private void Start()
     {
@@ -35,10 +52,15 @@ public class PlayerControl : MonoBehaviour
             Dodge();
 
         // Then check for attack input or queued attack
-        if (InputSystem.actions["Attack"].WasPressedThisFrame() ||
-            queuedAttack)
+        if (canAttack && 
+            (InputSystem.actions["Attack"].WasPressedThisFrame() ||
+            queuedAttack))
         {
-            if (canMove) Attack();
+            if (canMove)
+            {
+                attackCoroutine = Attack();
+                StartCoroutine(attackCoroutine);
+            }
             else queuedAttack = true;
         }
 
@@ -81,13 +103,45 @@ public class PlayerControl : MonoBehaviour
         queuedAttack = false;
 
         // Stop attack coroutines
+        if (attackCoroutine != null)
+            StopCoroutine(attackCoroutine);
     }
 
-    private void Attack()
+    private IEnumerator Attack()
     {
-        // Turn on hitbox that is turned off at the end of coroutine
-        
-        // Start coroutine that makes you unable to move for the duration
+        // Turn on hitbox
+        hitbox.SetActive(true);
+
+        // Wait for duration
+        yield return new WaitForSeconds(attackTime);
+
+        // Turn off hitbox
+        hitbox.SetActive(false);
+
+        //Enable movement again
+        canMove = true;
+
+        // Last hit of combo
+        if (attackCount >= 3)
+        {
+            // Disable attacking
+            canAttack = false;
+            // Reset combo
+            attackCount = 1;
+        }
+        // Otherwise
+        else
+        {
+            // Update hit in combo
+            attackCount++;
+            StopCoroutine(attackCoroutine);
+        }
+
+        // Wait cooldown time
+        yield return new WaitForSeconds(attackCooldown);
+
+        // Enable attacking
+        canAttack = true;
     }
 }
 
