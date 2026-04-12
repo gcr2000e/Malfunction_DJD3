@@ -7,6 +7,9 @@ public class PlayerControl : MonoBehaviour
     [Header ("Movement")]
     [SerializeField]
     private float moveSpeed;
+    [SerializeField]
+    private GameObject model;
+    private Camera mainCam;
 
     [Header("Combat")]
     [SerializeField]
@@ -36,16 +39,19 @@ public class PlayerControl : MonoBehaviour
 
     private bool queuedAttack = false;
 
-
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        mainCam = FindFirstObjectByType<Camera>();
         if (rb == null)
             throw new MissingReferenceException("No Rigidbody in Player");
         else canMove = true;
     }
     private void Update()
     {
+        // Model look at mouse
+        ModelRotation();
+
         // First priority is dodge input
         if (InputSystem.actions["Dodge"].WasPressedThisFrame()
             && dodgeCooldownTimer + dodgeCooldown < Time.time)
@@ -78,6 +84,17 @@ public class PlayerControl : MonoBehaviour
                 + transform.forward * 
             InputSystem.actions["Move"].ReadValue<Vector2>().y)
                 .normalized;
+    }
+
+    private void ModelRotation()
+    {
+        Vector3 mousePosition = 
+            mainCam.ScreenToWorldPoint(new Vector3(
+                InputSystem.actions["MousePos"].ReadValue<Vector2>().x,
+                InputSystem.actions["MousePos"].ReadValue<Vector2>().y,
+                10f));
+        mousePosition.y = model.transform.position.y;
+        model.transform.LookAt(mousePosition);
     }
 
     private void Dodge()
