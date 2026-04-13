@@ -88,13 +88,23 @@ public class PlayerControl : MonoBehaviour
 
     private void ModelRotation()
     {
-        Vector3 mousePosition = 
-            mainCam.ScreenToWorldPoint(new Vector3(
-                InputSystem.actions["MousePos"].ReadValue<Vector2>().x,
-                InputSystem.actions["MousePos"].ReadValue<Vector2>().y,
-                10f));
-        mousePosition.y = model.transform.position.y;
-        model.transform.LookAt(mousePosition);
+        Vector3 mousePos = 
+            // Use model as reference for the mouse position
+            model.transform.position +
+
+            // Get relative mouse position horizontally
+            (InputSystem.actions["MousePos"]
+            .ReadValue<Vector2>().x
+            - Screen.width / 2)
+            * transform.right +
+
+            // Get relative mouse position vertically
+            (InputSystem.actions["MousePos"]
+            .ReadValue<Vector2>().y
+            - Screen.height / 2)
+            * transform.forward;
+
+        model.transform.LookAt(mousePos);
     }
 
     private void Dodge()
