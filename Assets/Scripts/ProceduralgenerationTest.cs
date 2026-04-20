@@ -16,12 +16,7 @@ public class ProceduralgenerationTest : MonoBehaviour
 
     void Update()
     {
-        // Pressiona R para regenerar
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            ClearDungeon();
-            Generate();
-        }
+       
     }
 
     void Generate()
@@ -38,7 +33,7 @@ public class ProceduralgenerationTest : MonoBehaviour
 
             spawnedRooms.Add(room);
 
-            // Próxima posição (linha simples)
+            // PrÃ³xima posiÃ§Ã£o (linha simples)
             spawnPos += new Vector3(0, 0, roomSpacing);
         }
     }

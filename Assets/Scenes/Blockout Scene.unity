@@ -463,9 +463,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ProceduralgenerationTest
   roomPrefabs:
   - {fileID: 8427465739119770341, guid: 7ec5ba7167c8b4c4585b3f1aefa1dac5, type: 3}
-  - {fileID: 5600959458739396434, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
-  roomCount: 8
-  roomSpacing: 12
+  - {fileID: 8427465739119770341, guid: 7ec5ba7167c8b4c4585b3f1aefa1dac5, type: 3}
+  roomCount: 3
+  roomSpacing: 8
 --- !u!4 &2080455406
 Transform:
   m_ObjectHideFlags: 0
