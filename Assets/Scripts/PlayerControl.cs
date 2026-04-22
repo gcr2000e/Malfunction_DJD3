@@ -9,7 +9,8 @@ public class PlayerControl : MonoBehaviour
     private float moveSpeed;
     [SerializeField]
     private GameObject model;
-    private Camera mainCam;
+
+    private CameraTarget cam;
 
     [Header("Combat")]
     [SerializeField]
@@ -42,7 +43,7 @@ public class PlayerControl : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        mainCam = FindFirstObjectByType<Camera>();
+        cam = FindFirstObjectByType<CameraTarget>();
         if (rb == null)
             throw new MissingReferenceException("No Rigidbody in Player");
         else canMove = true;
@@ -88,22 +89,12 @@ public class PlayerControl : MonoBehaviour
 
     private void ModelRotation()
     {
-        Vector3 mousePos = 
-            // Use model as reference for the mouse position
-            model.transform.position +
+        // Get rotation from mouse
+        Vector3 mousePos = cam.getMouseWorldPosition();
+        // Make it so character only rotates on the z axis
+        mousePos.y = model.transform.position.y;
 
-            // Get relative mouse position horizontally
-            (InputSystem.actions["MousePos"]
-            .ReadValue<Vector2>().x
-            - Screen.width / 2)
-            * transform.right +
-
-            // Get relative mouse position vertically
-            (InputSystem.actions["MousePos"]
-            .ReadValue<Vector2>().y
-            - Screen.height / 2)
-            * transform.forward;
-
+        // Apply rotation to model
         model.transform.LookAt(mousePos);
     }
 
