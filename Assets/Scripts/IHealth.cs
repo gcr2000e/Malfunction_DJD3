@@ -1,5 +1,5 @@
 public interface IHealth
 {
-    public void Heal();
-    public void Damage();
+    public void Heal(uint healing);
+    public void Damage(uint damage);
 }
