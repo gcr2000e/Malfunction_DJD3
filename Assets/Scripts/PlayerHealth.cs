@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour, IHealth
 {
@@ -7,18 +6,35 @@ public class PlayerHealth : MonoBehaviour, IHealth
     private uint maxHealth;
     private uint currentHealth;
 
-    [SerializeField]
-    private Slider healthSlider;
+    private DisplayHealth healthDisplay;
+
+    public uint MaxHealth 
+        { get { return maxHealth; } }
+    public uint CurrentHealth
+        { get { return currentHealth; } }
+
+    private bool hasHealthDisplay = false;
 
     [SerializeField]
     private bool invincible = false;
 
     private void Start()
     {
+        // Set current health to match max health
         currentHealth = maxHealth;
+        
+        // Get the health display script
+        healthDisplay = GetComponent<DisplayHealth>();
 
-        SetHealth(maxHealth);
-        UpdateHealth(currentHealth);
+        if (healthDisplay != null)
+        {
+            // Check just in case the player doesn't need the script
+            hasHealthDisplay = true;
+            // Set max health
+            healthDisplay.SetHealth(maxHealth);
+            // Update current health to match
+            healthDisplay.UpdateHealth(currentHealth);
+        }
     }
 
     public void Heal(uint healing)
@@ -30,7 +46,10 @@ public class PlayerHealth : MonoBehaviour, IHealth
             if (currentHealth > maxHealth)
                 currentHealth = maxHealth;
 
-            UpdateHealth(currentHealth);
+            // Update display
+            if (hasHealthDisplay)
+                healthDisplay
+                    .UpdateHealth(currentHealth);
         }
     }
     public void Damage(uint damage)
@@ -48,7 +67,10 @@ public class PlayerHealth : MonoBehaviour, IHealth
                 currentHealth -= damage;
             }
         }
-        UpdateHealth(currentHealth);
+            // Update display
+            if (hasHealthDisplay)
+                healthDisplay
+                    .UpdateHealth(currentHealth);
     }
 
     private void OnDeath()
@@ -57,14 +79,5 @@ public class PlayerHealth : MonoBehaviour, IHealth
         currentHealth = 0;
 
         // Do Death sequence here
-    }
-    public void SetHealth(uint maxHealth)
-    {
-        healthSlider.maxValue = maxHealth;
-    }
-
-    public void UpdateHealth(uint health)
-    {
-        healthSlider.value = health;
     }
 }
