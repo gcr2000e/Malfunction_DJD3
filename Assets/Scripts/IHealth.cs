@@ -2,9 +2,39 @@ using UnityEngine;
 
 public abstract class IHealth : MonoBehaviour
 {
-    public abstract uint MaxHealth { get; }
-    public abstract uint CurrentHealth { get; }
+    [SerializeField]
+    protected uint maxHealth;
+    public uint MaxHealth
+    { get { return maxHealth; } }
+
+    protected uint currentHealth;
+    public  uint CurrentHealth
+    { get { return currentHealth; } }
+
+    public virtual void Damage(uint damage)
+    {
+        // Check if player is invincible or dead
+        if (currentHealth > 0)
+        {
+            // Prevent health cicling around
+            if (currentHealth < damage)
+            {
+                OnDeath();
+            }
+            else
+            {
+                currentHealth -= damage;
+            }
+        }
+    }
 
     public abstract void Heal(uint healing);
-    public abstract void Damage(uint damage);
+
+    protected abstract void OnDeath();
+
+    private void Start()
+    {
+        // Set current health to match max health
+        currentHealth = maxHealth;
+    }
 }
