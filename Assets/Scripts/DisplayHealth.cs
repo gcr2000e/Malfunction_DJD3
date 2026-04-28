@@ -6,15 +6,19 @@ public class DisplayHealth : MonoBehaviour
     [SerializeField]
     private Slider healthSlider;
 
-    public void SetHealth(uint maxHealth)
+    private IHealth health;
+
+    private void Start()
     {
+        health = GetComponent<IHealth>();
+
         // Set max health
-        healthSlider.maxValue = maxHealth;
+        healthSlider.maxValue = health.MaxHealth;
     }
 
-    public void UpdateHealth(uint health)
+    private void Update()
     {
         // Set display to current health
-        healthSlider.value = health;
+        healthSlider.value = health.CurrentHealth;
     }
 }

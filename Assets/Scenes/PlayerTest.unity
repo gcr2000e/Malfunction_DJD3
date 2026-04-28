@@ -5267,6 +5267,7 @@ GameObject:
   - component: {fileID: 1892766084}
   - component: {fileID: 1892766083}
   - component: {fileID: 1892766087}
+  - component: {fileID: 1892766088}
   - component: {fileID: 1892766086}
   - component: {fileID: 1892766085}
   m_Layer: 0
@@ -5374,8 +5375,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   maxHealth: 100
-  healthSlider: {fileID: 675286565}
   invincible: 0
+--- !u!114 &1892766088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892766081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2a46e3a74c4c14a852c9a22ed7ea6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DisplayHealth
+  healthSlider: {fileID: 675286565}
 --- !u!4 &1896503524 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 916ce5b6d05a3c04d902fe45f4d9ad03, type: 3}
