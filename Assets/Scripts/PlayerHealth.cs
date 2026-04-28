@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour, IHealth
 {
@@ -7,7 +8,18 @@ public class PlayerHealth : MonoBehaviour, IHealth
     private uint currentHealth;
 
     [SerializeField]
+    private Slider healthSlider;
+
+    [SerializeField]
     private bool invincible = false;
+
+    private void Start()
+    {
+        currentHealth = maxHealth;
+
+        SetHealth(maxHealth);
+        UpdateHealth(currentHealth);
+    }
 
     public void Heal(uint healing)
     {
@@ -17,6 +29,8 @@ public class PlayerHealth : MonoBehaviour, IHealth
             currentHealth += healing;
             if (currentHealth > maxHealth)
                 currentHealth = maxHealth;
+
+            UpdateHealth(currentHealth);
         }
     }
     public void Damage(uint damage)
@@ -34,6 +48,7 @@ public class PlayerHealth : MonoBehaviour, IHealth
                 currentHealth -= damage;
             }
         }
+        UpdateHealth(currentHealth);
     }
 
     private void OnDeath()
@@ -42,5 +57,14 @@ public class PlayerHealth : MonoBehaviour, IHealth
         currentHealth = 0;
 
         // Do Death sequence here
+    }
+    public void SetHealth(uint maxHealth)
+    {
+        healthSlider.maxValue = maxHealth;
+    }
+
+    public void UpdateHealth(uint health)
+    {
+        healthSlider.value = health;
     }
 }
