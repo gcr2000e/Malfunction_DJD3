@@ -23,9 +23,12 @@ public class MeleeEnemy : MonoBehaviour
     [SerializeField]
     private GameObject model;
 
+    private Animator animator;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        animator = GetComponentInChildren<Animator>();
 
         // Get player as target when spawned
         target = FindFirstObjectByType<PlayerControl>()
@@ -38,11 +41,13 @@ public class MeleeEnemy : MonoBehaviour
         if (InRange())
         {
             // Do attack anim
+            animator.SetBool("CanAttack", true);
         }
         else if (canMove)
         {
             MoveToTarget();
             // Do move anim
+            animator.SetBool("CanAttack", false);
         }
     }
 
