@@ -23,7 +23,8 @@ public class Damage : MonoBehaviour
         IHealth otherHealth = other.GetComponent<IHealth>();
 
         // Prevent attacking own health system
-        if (otherHealth != health)
+        if (otherHealth != null 
+            && otherHealth != health)
         {
             // Damage other
             otherHealth.Damage(damage);
