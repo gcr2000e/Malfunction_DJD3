@@ -17,7 +17,7 @@ public abstract class IHealth : MonoBehaviour
         if (currentHealth > 0)
         {
             // Prevent health cicling around
-            if (currentHealth < damage)
+            if (currentHealth <= damage)
             {
                 OnDeath();
             }
