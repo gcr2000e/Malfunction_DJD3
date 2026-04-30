@@ -28,6 +28,7 @@ public abstract class IEnemy : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        animator = GetComponentInChildren<Animator>();
 
         // Get player as target when spawned
         target = FindFirstObjectByType<PlayerControl>()
