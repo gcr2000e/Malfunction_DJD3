@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 960293182529054753}
   - component: {fileID: 3638690736238048471}
   - component: {fileID: 4329809833952655897}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Melee Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -316,6 +316,7 @@ MonoBehaviour:
   attackStrenght: 10
   attackDistance: 2
   model: {fileID: 4811729470282819958}
+  canRotate: 0
 --- !u!54 &3638690736238048471
 Rigidbody:
   m_ObjectHideFlags: 0
