@@ -13,7 +13,7 @@ public abstract class IHealth : MonoBehaviour
 
     public virtual void Damage(uint damage)
     {
-        // Check if player is invincible or dead
+        // Check if dead
         if (currentHealth > 0)
         {
             // Prevent health cicling around
