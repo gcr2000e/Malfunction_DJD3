@@ -1,80 +1,18 @@
 using UnityEngine;
 
-public class MeleeEnemy : MonoBehaviour
+public class MeleeEnemy : IEnemy
 {
-    [Header("Movement")]
-    private Transform target;
-    
-    [SerializeField]
-    private float moveSpeed;
-    
-    [SerializeField]
-    private bool canMove = true;
-    
-    private Rigidbody rb;
-
-    [Header("Combat")]
-    [SerializeField]
-    private uint attackStrenght;
-    [SerializeField]
-    private float attackDistance;
-
-    [Header("Visual")]
-    [SerializeField]
-    private GameObject model;
-
-    private Animator animator;
-
-    private void Start()
+    protected override void Attack()
     {
-        rb = GetComponent<Rigidbody>();
-        animator = GetComponentInChildren<Animator>();
-
-        // Get player as target when spawned
-        target = FindFirstObjectByType<PlayerControl>()
-            .gameObject
-            .transform;
+        // Do attack animation
+        animator.SetBool("CanAttack", true);
     }
 
-    private void Update()
+    protected override void DoMovement()
     {
-        if (InRange())
-        {
-            // Do attack anim
-            animator.SetBool("CanAttack", true);
-        }
-        else if (canMove)
-        {
-            MoveToTarget();
-            // Do move anim
-            animator.SetBool("CanAttack", false);
-        }
-    }
-
-    private void MoveToTarget()
-    {
-        // Rotate model
-        ModelRotation();
         // Move in desired direction
         rb.linearVelocity = model.transform.forward * moveSpeed;
-    }
-
-    private void ModelRotation()
-    {
-        Vector3 lookAtPos = target.position;
-        lookAtPos.y = model.transform.position.y;
-
-        // Apply rotation to model
-        model.transform.LookAt(lookAtPos);
-    }
-
-    private bool InRange()
-    {
-        // Get the distance between the two
-        float distance = 
-            (target.position - transform.position)
-            .magnitude;
-        // If the distance is less or equal
-        return (distance <= attackDistance);
+        // Do move anim
+        animator.SetBool("CanAttack", false);
     }
 }

@@ -6,7 +6,7 @@ public abstract class IEnemy : MonoBehaviour
     private Transform target;
 
     [SerializeField]
-    private float moveSpeed;
+    protected float moveSpeed;
 
     [SerializeField]
     private bool canMove = true;
@@ -15,13 +15,13 @@ public abstract class IEnemy : MonoBehaviour
 
     [Header("Combat")]
     [SerializeField]
-    private uint attackStrenght;
+    protected uint attackStrenght;
     [SerializeField]
-    private float attackDistance;
+    protected float attackDistance;
 
     [Header("Visual")]
     [SerializeField]
-    private GameObject model;
+    protected GameObject model;
 
     protected Animator animator;
 
@@ -34,6 +34,18 @@ public abstract class IEnemy : MonoBehaviour
         target = FindFirstObjectByType<PlayerControl>()
             .gameObject
             .transform;
+    }
+    private void Update()
+    {
+        if (InRange())
+        {
+            Attack();
+        }
+        else if (canMove)
+        {
+            ModelRotation();
+            DoMovement();
+        }
     }
 
     private void ModelRotation()
