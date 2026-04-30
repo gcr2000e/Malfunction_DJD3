@@ -12,20 +12,31 @@ public class RangedEnemy : IEnemy
     [SerializeField]
     private uint shotForce;
 
+    [SerializeField]
+    private float shotCooldown;
+    private float timeLastShot;
+
     protected override void Attack()
     {
-        // Spawn a projectile
-        GameObject bullet = Instantiate(
-            bulletPrefab, 
-            gunPoint.position, 
-            Quaternion.LookRotation(transform.forward)
-            );
-        // Add force to bullet
-        bullet.GetComponent<Rigidbody>()
-            .AddForce(transform.forward * shotForce);
-        // Set the bullet's damage
-        bullet.GetComponent<Damage>()
-            .SetDamage(attackStrenght);
+        if (Time.time >= timeLastShot + shotCooldown)
+        {
+            // Spawn a projectile
+            GameObject bullet = Instantiate(
+                bulletPrefab,
+                gunPoint.position,
+                Quaternion.LookRotation(transform.forward)
+                );
+            // Make sure it's active
+            bullet.SetActive(true);
+            // Add force to bullet
+            bullet.GetComponent<Rigidbody>()
+                .AddForce(transform.forward * shotForce);
+            // Set the bullet's damage
+            bullet.GetComponent<Damage>()
+                .SetDamage(attackStrenght);
+            // Set time last shot
+            timeLastShot = Time.time;
+        }
     }
 
     protected override void DoMovement()
