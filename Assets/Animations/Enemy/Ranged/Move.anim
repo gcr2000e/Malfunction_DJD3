@@ -33,10 +33,10 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: canMove
+    attribute: canRotate
     path: 
     classID: 114
-    script: {fileID: 11500000, guid: 739eda859ea3bc544a5d755be25246bc, type: 3}
+    script: {fileID: 11500000, guid: a9d9465abea9b9949b92c16a8160e7c9, type: 3}
     flags: 0
   - serializedVersion: 2
     curve:
@@ -54,10 +54,10 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: canRotate
+    attribute: canMove
     path: 
     classID: 114
-    script: {fileID: 11500000, guid: 739eda859ea3bc544a5d755be25246bc, type: 3}
+    script: {fileID: 11500000, guid: a9d9465abea9b9949b92c16a8160e7c9, type: 3}
     flags: 0
   m_PPtrCurves: []
   m_SampleRate: 60
@@ -69,8 +69,8 @@ AnimationClip:
     genericBindings:
     - serializedVersion: 2
       path: 0
-      attribute: 2899368847
-      script: {fileID: 11500000, guid: 739eda859ea3bc544a5d755be25246bc, type: 3}
+      attribute: 3318270155
+      script: {fileID: 11500000, guid: a9d9465abea9b9949b92c16a8160e7c9, type: 3}
       typeID: 114
       customType: 0
       isPPtrCurve: 0
@@ -78,8 +78,8 @@ AnimationClip:
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 0
-      attribute: 3318270155
-      script: {fileID: 11500000, guid: 739eda859ea3bc544a5d755be25246bc, type: 3}
+      attribute: 2899368847
+      script: {fileID: 11500000, guid: a9d9465abea9b9949b92c16a8160e7c9, type: 3}
       typeID: 114
       customType: 0
       isPPtrCurve: 0
@@ -96,7 +96,7 @@ AnimationClip:
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 1
+    m_LoopTime: 0
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0
@@ -123,10 +123,10 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: canMove
+    attribute: canRotate
     path: 
     classID: 114
-    script: {fileID: 11500000, guid: 739eda859ea3bc544a5d755be25246bc, type: 3}
+    script: {fileID: 11500000, guid: a9d9465abea9b9949b92c16a8160e7c9, type: 3}
     flags: 0
   - serializedVersion: 2
     curve:
@@ -144,10 +144,10 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: canRotate
+    attribute: canMove
     path: 
     classID: 114
-    script: {fileID: 11500000, guid: 739eda859ea3bc544a5d755be25246bc, type: 3}
+    script: {fileID: 11500000, guid: a9d9465abea9b9949b92c16a8160e7c9, type: 3}
     flags: 0
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
