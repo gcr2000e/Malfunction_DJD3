@@ -277,7 +277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bfb149efa2f5dd49ab657f69f9eb824, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
-  maxLifeTime: 10
+  maxLifeTime: 15
 --- !u!114 &8942263355273549305
 MonoBehaviour:
   m_ObjectHideFlags: 0
