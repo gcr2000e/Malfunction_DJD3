@@ -25,7 +25,7 @@ public abstract class IEnemy : MonoBehaviour
 
     protected Animator animator;
 
-    private void Start()
+    protected virtual void Start()
     {
         rb = GetComponent<Rigidbody>();
         animator = GetComponentInChildren<Animator>();

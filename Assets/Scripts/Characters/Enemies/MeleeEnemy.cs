@@ -2,6 +2,14 @@ using UnityEngine;
 
 public class MeleeEnemy : IEnemy
 {
+    protected override void Start()
+    {
+        base.Start();
+        // Set the damage to match attack strenght
+        GetComponentInChildren<Damage>()
+            .SetDamage(attackStrenght);
+    }
+
     protected override void Attack()
     {
         // Do attack animation
