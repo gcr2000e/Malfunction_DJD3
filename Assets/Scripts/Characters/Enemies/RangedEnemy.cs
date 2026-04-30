@@ -30,7 +30,7 @@ public class RangedEnemy : IEnemy
             bullet.SetActive(true);
             // Add force to bullet
             bullet.GetComponent<Rigidbody>()
-                .AddForce(transform.forward * shotForce);
+                .AddForce(model.transform.forward * shotForce);
             // Set the bullet's damage
             bullet.GetComponent<Damage>()
                 .SetDamage(attackStrenght);

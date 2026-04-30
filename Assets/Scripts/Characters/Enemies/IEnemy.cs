@@ -22,6 +22,8 @@ public abstract class IEnemy : MonoBehaviour
     [Header("Visual")]
     [SerializeField]
     protected GameObject model;
+    [SerializeField]
+    private bool canRotate = true;
 
     protected Animator animator;
 
@@ -37,13 +39,16 @@ public abstract class IEnemy : MonoBehaviour
     }
     private void Update()
     {
+        if (canRotate)
+        {
+            ModelRotation();
+        }
         if (InRange())
         {
             Attack();
         }
         else if (canMove)
         {
-            ModelRotation();
             DoMovement();
         }
     }
