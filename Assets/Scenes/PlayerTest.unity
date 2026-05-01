@@ -15880,6 +15880,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6523686960935108206, guid: a53207f7ec847644a9601f4770b6328f, type: 3}
+      propertyPath: invincible
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

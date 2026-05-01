@@ -43,13 +43,16 @@ public abstract class IEnemy : MonoBehaviour
         {
             ModelRotation();
         }
-        if (InRange())
+        if (canMove)
         {
-            Attack();
+            if (InRange())
+                Attack();
+            else
+                DoMovement();
         }
-        else if (canMove)
+        else
         {
-            DoMovement();
+            rb.linearVelocity = Vector3.zero;
         }
     }
 
@@ -70,6 +73,15 @@ public abstract class IEnemy : MonoBehaviour
             .magnitude;
         // If the distance is less or equal
         return (distance <= attackDistance);
+    }
+
+    public void Stun()
+    {
+        // Don't stun an already stunned enemy
+        if (canMove)
+        {
+            animator.SetTrigger("Stun");
+        }
     }
 
     protected abstract void Attack();
