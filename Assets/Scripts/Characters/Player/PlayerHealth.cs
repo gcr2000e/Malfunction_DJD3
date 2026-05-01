@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : IHealth
 {
@@ -29,5 +30,6 @@ public class PlayerHealth : IHealth
         currentHealth = 0;
 
         // Do Death sequence here
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
