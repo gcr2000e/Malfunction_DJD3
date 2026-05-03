@@ -12,6 +12,12 @@ public class EMPAction : MonoBehaviour
 
     private void Update()
     {
+        // EMP charge cheat
+        if (InputSystem.actions["EMPCheat"].WasPressedThisFrame())
+        {
+            currentEnergy = requiredCharge;
+        }
+
         if (InputSystem.actions["EMP"].WasPressedThisFrame())
         {
             UseAbility();

@@ -113,6 +113,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "EMPCheat",
+                    "type": "Button",
+                    "id": "f3ae1385-5b84-4aab-827f-8f243ec73df9",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -542,6 +551,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "InvincibilityCheat",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3beb09fc-59d7-43bd-816c-0695d50ec815",
+                    "path": "<Keyboard>/f2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "EMPCheat",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
