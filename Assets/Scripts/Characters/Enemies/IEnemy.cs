@@ -103,6 +103,7 @@ public abstract class IEnemy : MonoBehaviour
             // Max Distance
             rayDir.magnitude))
         {
+            // if it's the player it's not blocked
             return hit.transform != target;
         }
         else return true;
