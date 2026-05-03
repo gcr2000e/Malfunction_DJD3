@@ -39,20 +39,23 @@ public abstract class IEnemy : MonoBehaviour
     }
     private void Update()
     {
-        if (canRotate)
+        if (!TargetBlocked())
         {
-            ModelRotation();
-        }
-        if (canMove)
-        {
-            if (InRange())
-                Attack();
+            if (canRotate)
+            {
+                ModelRotation();
+            }
+            if (canMove)
+            {
+                if (InRange())
+                    Attack();
+                else
+                    DoMovement();
+            }
             else
-                DoMovement();
-        }
-        else
-        {
-            rb.linearVelocity = Vector3.zero;
+            {
+                rb.linearVelocity = Vector3.zero;
+            }
         }
     }
 
@@ -82,6 +85,28 @@ public abstract class IEnemy : MonoBehaviour
         {
             animator.SetTrigger("Stun");
         }
+    }
+
+    private bool TargetBlocked()
+    {
+        Vector3 rayDir = target.position - transform.position;
+
+        RaycastHit hit;
+
+        if (Physics.Raycast(
+            // Origin
+            transform.position,
+            // Direction
+            rayDir.normalized,
+            // Hit
+            out hit,
+            // Max Distance
+            rayDir.magnitude))
+        {
+            // if it's the player it's not blocked
+            return hit.transform != target;
+        }
+        else return true;
     }
 
     protected abstract void Attack();
