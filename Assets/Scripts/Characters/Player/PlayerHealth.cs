@@ -1,10 +1,14 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+
 
 public class PlayerHealth : IHealth
 {
     [SerializeField]
     private bool invincible = false;
+
+    private bool invincibilityCheat = false;
 
     public override void Heal(uint healing)
     {
@@ -18,7 +22,8 @@ public class PlayerHealth : IHealth
     }
     public override void Damage(uint damage)
     {
-        if (!invincible)
+        if (!invincibilityCheat 
+            && !invincible)
         {
             base.Damage(damage);
         }
@@ -31,5 +36,15 @@ public class PlayerHealth : IHealth
 
         // Do Death sequence here
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    private void Update()
+    {
+        // Invencibility Cheat
+        if (InputSystem.actions["InvincibilityCheat"]
+            .WasPressedThisFrame())
+        {
+            invincibilityCheat = !invincibilityCheat;
+        }
     }
 }
