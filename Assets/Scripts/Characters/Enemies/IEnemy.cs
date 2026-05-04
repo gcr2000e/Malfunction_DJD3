@@ -95,7 +95,9 @@ public abstract class IEnemy : MonoBehaviour
 
         if (Physics.Raycast(
             // Origin
-            transform.position,
+            transform.position
+            // Avoid clipping the floor
+            + Vector3.up,
             // Direction
             rayDir.normalized,
             // Hit
