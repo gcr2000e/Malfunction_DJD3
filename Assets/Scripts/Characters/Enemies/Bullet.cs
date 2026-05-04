@@ -1,13 +1,14 @@
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class Bullet : Damage
 {
     [SerializeField]
     private float maxLifeTime;
     private float lifeTime;
 
-    private void OnTriggerExit(Collider other)
+    protected override void OnTriggerEnter(Collider other)
     {
+        base.OnTriggerEnter(other);
         Destroy(gameObject);
     }
 

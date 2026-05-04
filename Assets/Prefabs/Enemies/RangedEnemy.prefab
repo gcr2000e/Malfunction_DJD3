@@ -137,7 +137,6 @@ GameObject:
   - component: {fileID: 6396799761681359829}
   - component: {fileID: 8856852322719917364}
   - component: {fileID: 988690434284745690}
-  - component: {fileID: 8942263355273549305}
   m_Layer: 8
   m_Name: Bullet
   m_TagString: Untagged
@@ -277,20 +276,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bfb149efa2f5dd49ab657f69f9eb824, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
-  maxLifeTime: 15
---- !u!114 &8942263355273549305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6596490244793555229}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53877e2a34ab09541ba7c774702a26e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Damage
   damage: 0
+  maxLifeTime: 15
 --- !u!1 &7216496776578535969
 GameObject:
   m_ObjectHideFlags: 0

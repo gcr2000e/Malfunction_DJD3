@@ -18,7 +18,7 @@ public class Damage : MonoBehaviour
         damage = damageValue;
     }
 
-    private void OnTriggerEnter(Collider other)
+    protected virtual void OnTriggerEnter(Collider other)
     {
         IHealth otherHealth = other.GetComponent<IHealth>();
 
