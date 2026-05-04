@@ -33,6 +33,7 @@ public class EMPAction : MonoBehaviour
         if (currentEnergy >= requiredCharge)
         {
             empObject.SetActive(true);
+            currentEnergy = 0;
         }
     }
 
