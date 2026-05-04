@@ -6,6 +6,10 @@ public class EMPAction : MonoBehaviour
     [SerializeField]
     private uint requiredCharge;
     private uint currentEnergy;
+    public uint RequiredCharge
+    { get { return requiredCharge; } }
+    public uint CurrentEnergy 
+    { get { return currentEnergy; } }
 
     [SerializeField]
     private GameObject empObject;

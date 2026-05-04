@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 9071385692998959460}
   - component: {fileID: 6523686960935108206}
   - component: {fileID: 4724857766307262701}
+  - component: {fileID: 2063512415789768811}
   - component: {fileID: 6017982701896492730}
   - component: {fileID: 8844132413767564197}
   - component: {fileID: 2659919677855013042}
@@ -176,6 +177,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DisplayHealth
   healthSlider: {fileID: 0}
+--- !u!114 &2063512415789768811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5029237316214152839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f7c800580100f14f849ee7261a4c342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DisplayEMP
+  empSlider: {fileID: 0}
 --- !u!114 &6017982701896492730
 MonoBehaviour:
   m_ObjectHideFlags: 0
