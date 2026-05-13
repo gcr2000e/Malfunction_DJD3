@@ -6379,6 +6379,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: CameraTarget
       objectReference: {fileID: 0}
+    - target: {fileID: 1804167553023460559, guid: 46b8993685b67294d9cba9957532615b, type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804167553023460559, guid: 46b8993685b67294d9cba9957532615b, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.14716971
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804167553023460559, guid: 46b8993685b67294d9cba9957532615b, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.14394554
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804167553023460559, guid: 46b8993685b67294d9cba9957532615b, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.1418938
+      objectReference: {fileID: 0}
     - target: {fileID: 3950876668232844117, guid: 46b8993685b67294d9cba9957532615b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.1
