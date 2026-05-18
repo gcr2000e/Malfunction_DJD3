@@ -293,6 +293,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2800086730708486057, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3035c0f6e3ea8c6498103917d105b4f0, type: 2}
     - target: {fileID: 7216496776578535969, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
       propertyPath: m_Name
       value: RangedEnemy (3)
@@ -376,6 +380,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2800086730708486057, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3035c0f6e3ea8c6498103917d105b4f0, type: 2}
     - target: {fileID: 7216496776578535969, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
       propertyPath: m_Name
       value: RangedEnemy (4)
@@ -1629,6 +1637,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1586326406146982151, guid: a53207f7ec847644a9601f4770b6328f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 75c868062641dc1449ce071f68d55ae0, type: 2}
     - target: {fileID: 2063512415789768811, guid: a53207f7ec847644a9601f4770b6328f, type: 3}
       propertyPath: empSlider
       value: 
@@ -4972,7 +4984,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1112692091}
   m_Layer: 0
-  m_Name: Rooms
+  m_Name: Map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5565,6 +5577,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2800086730708486057, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3035c0f6e3ea8c6498103917d105b4f0, type: 2}
     - target: {fileID: 5504729234644613077, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
       propertyPath: attackDistance
       value: 1
@@ -5989,6 +6005,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2800086730708486057, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3035c0f6e3ea8c6498103917d105b4f0, type: 2}
     - target: {fileID: 7216496776578535969, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
       propertyPath: m_Name
       value: RangedEnemy (2)
@@ -7862,6 +7882,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2800086730708486057, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3035c0f6e3ea8c6498103917d105b4f0, type: 2}
     - target: {fileID: 7216496776578535969, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
       propertyPath: m_Name
       value: RangedEnemy (5)
