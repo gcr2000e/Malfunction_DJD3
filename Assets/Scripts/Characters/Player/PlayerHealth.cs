@@ -10,7 +10,7 @@ public class PlayerHealth : IHealth
 
     private bool invincibilityCheat = false;
 
-    public override void Heal(uint healing)
+    public override void Heal(int healing)
     {
         // Check if below full hp
         if (currentHealth < base.maxHealth)
@@ -20,7 +20,7 @@ public class PlayerHealth : IHealth
                 currentHealth = maxHealth;
         }
     }
-    public override void Damage(uint damage)
+    public override void Damage(int damage)
     {
         if (!invincibilityCheat 
             && !invincible)

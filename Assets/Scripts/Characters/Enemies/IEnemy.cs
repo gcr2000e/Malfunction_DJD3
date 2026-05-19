@@ -15,7 +15,7 @@ public abstract class IEnemy : MonoBehaviour
 
     [Header("Combat")]
     [SerializeField]
-    protected uint attackStrenght;
+    protected int attackStrenght;
     [SerializeField]
     protected float attackDistance;
 

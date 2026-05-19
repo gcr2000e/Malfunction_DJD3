@@ -68,8 +68,8 @@ Material:
     - _ZWriteControl: 0
     m_Colors:
     - _FresnelColor: {r: 0.76511925, g: 2.0582988, b: 6.0076027, a: 1}
-    - _ScanLinesSpeed: {r: 0, g: 1, b: 0, a: 0}
-    - _ScanLinesTiling: {r: 1, g: 32, b: 0, a: 0}
+    - _ScanLinesSpeed: {r: 0, g: 0.5, b: 0, a: 0}
+    - _ScanLinesTiling: {r: 1, g: 4, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &4808171029670934460

@@ -10,12 +10,12 @@ public class EnemyHealth : IHealth
         animator = GetComponent<Animator>();
     }
 
-    public override void Heal(uint healing)
+    public override void Heal(int healing)
     {
         // Not needed for now
     }
 
-    public override void Damage(uint damage)
+    public override void Damage(int damage)
     {
         base.Damage(damage);
         animator.SetTrigger("Stagger");

@@ -3,7 +3,7 @@ using UnityEngine;
 public class Damage : MonoBehaviour
 {
     [SerializeField]
-    private uint damage;
+    private int damage;
 
     private IHealth health;
 
@@ -13,7 +13,7 @@ public class Damage : MonoBehaviour
     }
 
     // For variable damages
-    public void SetDamage(uint damageValue)
+    public void SetDamage(int damageValue)
     {
         damage = damageValue;
     }

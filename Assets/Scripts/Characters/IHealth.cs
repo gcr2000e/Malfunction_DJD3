@@ -3,15 +3,15 @@ using UnityEngine;
 public abstract class IHealth : MonoBehaviour
 {
     [SerializeField]
-    protected uint maxHealth;
-    public uint MaxHealth
+    protected int maxHealth;
+    public int MaxHealth
     { get { return maxHealth; } }
 
-    protected uint currentHealth;
-    public  uint CurrentHealth
+    protected int currentHealth;
+    public  int CurrentHealth
     { get { return currentHealth; } }
 
-    public virtual void Damage(uint damage)
+    public virtual void Damage(int damage)
     {
         // Check if dead
         if (currentHealth > 0)
@@ -28,7 +28,7 @@ public abstract class IHealth : MonoBehaviour
         }
     }
 
-    public abstract void Heal(uint healing);
+    public abstract void Heal(int healing);
 
     protected abstract void OnDeath();
 

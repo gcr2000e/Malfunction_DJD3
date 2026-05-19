@@ -32,8 +32,8 @@ Material:
     - _FresnelPower: 3
     m_Colors:
     - _FresnelColor: {r: 0.9747027, g: 3.828416, b: 6.498019, a: 1}
-    - _ScanLinesSpeed: {r: 0, g: 1, b: 0, a: 0}
-    - _ScanLinesTiling: {r: 1, g: 32, b: 0, a: 0}
+    - _ScanLinesSpeed: {r: 0, g: 0.5, b: 0, a: 0}
+    - _ScanLinesTiling: {r: 1, g: 4, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &8116597945864856858

@@ -10,7 +10,7 @@ public class RangedEnemy1 : IEnemy1
     private Transform gunPoint;
 
     [SerializeField]
-    private uint shotForce;
+    private int shotForce;
 
     [SerializeField]
     private float shotCooldown;
