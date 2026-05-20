@@ -5,6 +5,9 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField]
     private GameObject enemyPrefab;
 
+    [SerializeField]
+    private GameObject rangedEnemyPrefab;
+
     public void SpawnEnemies(RoomData room)
     {
         if (room == null ||
@@ -18,6 +21,12 @@ public class EnemySpawner : MonoBehaviour
 
             Instantiate(
                 enemyPrefab,
+                spawnPoint.position,
+                spawnPoint.rotation,
+                room.transform);
+
+            Instantiate(
+                rangedEnemyPrefab,
                 spawnPoint.position,
                 spawnPoint.rotation,
                 room.transform);
