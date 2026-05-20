@@ -4977,6 +4977,11 @@ Transform:
   - {fileID: 884709155}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1168070909 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6650406018430028708, guid: 46b8993685b67294d9cba9957532615b, type: 3}
+  m_PrefabInstance: {fileID: 1745879996}
+  m_PrefabAsset: {fileID: 0}
 --- !u!65 &1178879179
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6875,7 +6880,7 @@ PrefabInstance:
     - target: {fileID: 4034011831228167528, guid: 46b8993685b67294d9cba9957532615b, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 772734249100347493}
+      objectReference: {fileID: 1168070909}
     - target: {fileID: 6130004893258817927, guid: 46b8993685b67294d9cba9957532615b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -8978,11 +8983,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.02, y: 0.001, z: 0.02}
   m_Center: {x: -0.009999985, y: 0.0005, z: 0.009999998}
---- !u!1 &1948191732 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7216496776578535969, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
-  m_PrefabInstance: {fileID: 1415382839}
-  m_PrefabAsset: {fileID: 0}
 --- !u!65 &1948898379
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9190,7 +9190,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
   enemyPrefab: {fileID: 8819209195020671491, guid: 435756a773d0c9b47b1dbdca2de19cdc, type: 3}
-  rangedEnemyPrefab: {fileID: 1948191732}
 --- !u!114 &2070614650
 MonoBehaviour:
   m_ObjectHideFlags: 0
