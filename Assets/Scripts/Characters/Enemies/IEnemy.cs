@@ -33,7 +33,7 @@ public abstract class IEnemy : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
 
         // Get player as target when spawned
-        target = FindFirstObjectByType<PlayerControl>()
+        target = FindFirstObjectByType<PlayerCombat>()
             .gameObject
             .transform;
     }

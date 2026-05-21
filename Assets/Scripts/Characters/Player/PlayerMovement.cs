@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]
     private bool canMove;
+    [SerializeField]
+    private bool canDodge;
 
     [Header("Running")]
     [SerializeField]
@@ -47,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
 
         // First priority is dodge input
         if (InputSystem.actions["Dodge"].WasPressedThisFrame()
+            && canDodge
             && dodgeCooldownTimer + dodgeCooldown < Time.time)
             Dodge();
 
