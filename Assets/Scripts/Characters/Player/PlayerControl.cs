@@ -7,8 +7,6 @@ public class PlayerControl : MonoBehaviour
     [Header ("Movement")]
     [SerializeField]
     private float moveSpeed;
-    [SerializeField]
-    private GameObject model;
 
     private CameraTarget cam;
 
@@ -80,9 +78,9 @@ public class PlayerControl : MonoBehaviour
 
     private Vector3 MoveInputDir()
     {
-        return (transform.right * 
+        return (cam.transform.right * 
             InputSystem.actions["Move"].ReadValue<Vector2>().x
-                + transform.forward * 
+                + cam.transform.forward * 
             InputSystem.actions["Move"].ReadValue<Vector2>().y)
                 .normalized;
     }
@@ -92,10 +90,10 @@ public class PlayerControl : MonoBehaviour
         // Get rotation from mouse
         Vector3 mousePos = cam.getMouseWorldPosition();
         // Make it so character only rotates on the z axis
-        mousePos.y = model.transform.position.y;
+        mousePos.y = transform.position.y;
 
         // Apply rotation to model
-        model.transform.LookAt(mousePos);
+        transform.LookAt(mousePos);
     }
 
     private void Dodge()
