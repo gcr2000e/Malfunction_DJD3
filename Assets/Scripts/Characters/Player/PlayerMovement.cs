@@ -36,6 +36,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        Vector3 movementDir = MoveInputDir();
+
+        // Transform movement dir to local
+        Vector3 localMoveDir = transform.InverseTransformDirection(movementDir);
+
+        //Send movement direction to animator
+        animator.SetFloat("VerticalInput", localMoveDir.z);
+        animator.SetFloat("HorizontalInput", localMoveDir.x);
+
         // First priority is dodge input
         if (InputSystem.actions["Dodge"].WasPressedThisFrame()
             && dodgeCooldownTimer + dodgeCooldown < Time.time)
@@ -43,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
 
         else if (canMove)
             // If possible do movement
-            rb.linearVelocity = MoveInputDir() * moveSpeed;
+            rb.linearVelocity = movementDir * moveSpeed;
     }
 
     private Vector3 MoveInputDir()
