@@ -4,10 +4,13 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("AnimationControl")]
     [SerializeField]
     private bool canMove;
     [SerializeField]
     private bool canDodge;
+    [SerializeField]
+    private float animationMovement;
 
     [Header("Running")]
     [SerializeField]
@@ -15,11 +18,8 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Dodge")]
     [SerializeField]
-    private float dodgeStrenght;
-    [SerializeField]
     private float dodgeCooldown;
     private float dodgeCooldownTimer;
-    private IEnumerator dodgeCoroutine;
 
     private Animator animator;
     private CameraTarget cam;
@@ -56,6 +56,9 @@ public class PlayerMovement : MonoBehaviour
         else if (canMove)
             // If possible do movement
             rb.linearVelocity = movementDir * moveSpeed;
+        else
+            // Do animation based movement
+            rb.linearVelocity = transform.forward * animationMovement;
     }
 
     private Vector3 MoveInputDir()
@@ -76,16 +79,5 @@ public class PlayerMovement : MonoBehaviour
         animator.ResetTrigger("Attack");
         // Set animation trigger
         animator.SetTrigger("Dodge");
-
-
-        // Dodge in input direction
-        Vector3 movementDir = MoveInputDir();
-
-        // If no direction is being pressed default to forward
-        if (movementDir == Vector3.zero)
-            movementDir = transform.forward;
-
-        // The actual dodge
-        rb.AddForce(movementDir * dodgeStrenght);
     }
 }
