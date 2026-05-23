@@ -1869,13 +1869,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 772359890}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e45710384890b44697a8a13f5282401, type: 3}
+  m_Script: {fileID: 11500000, guid: e72a02e855ccaaf47b3e553c1f8300bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PDAInteractable
-  pdaTitle: Incident Report
-  pdaMessage: "Incident n\xBA: 12\n\nPriority: High\n\nIncident Description: System
-    bug that lead to a malfunction on the androinds on the park sector, no human
-    error behind this incident. "
+  titulo: System Error Kills Many
+  textoConteudo: During today's evening a malfunction the androids that were close
+    to the local park lead them to attack and kill many civilian people. The company
+    Stellar Minds opening an investigation to find the causes of this tragic incident.
+  distanciaInteracao: 2
 --- !u!1 &921562302
 GameObject:
   m_ObjectHideFlags: 0
@@ -2275,9 +2276,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 12694ebe26915d047b73c70fee651e5b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1679058876}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 12694ebe26915d047b73c70fee651e5b, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1679058879}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 12694ebe26915d047b73c70fee651e5b, type: 3}
       insertIndex: -1
@@ -2501,17 +2499,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1258565019}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e45710384890b44697a8a13f5282401, type: 3}
+  m_Script: {fileID: 11500000, guid: e72a02e855ccaaf47b3e553c1f8300bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PDAInteractable
-  pdaTitle: Log #1
-  pdaMessage: 'The android on park had a system error during their routines and killed
-    many people...
-
-    We still don''t know the real cause of this error...
-
-    Further
-    investigation needed... '
+  titulo: 'System Log 1# '
+  textoConteudo: "> Set all androids in the park in attack mode?\n\xBB Yes\n> All
+    android were set on attack mode... Threat level: Max\n>... "
+  distanciaInteracao: 2
 --- !u!1 &1275786858 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3908029602429038434, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
@@ -3299,22 +3293,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 12694ebe26915d047b73c70fee651e5b, type: 3}
   m_PrefabInstance: {fileID: 1126570242}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1679058876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1679058875}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e45710384890b44697a8a13f5282401, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PDAInteractable
-  pdaTitle: Androids Malfunction Kills Many
-  pdaMessage: 'During this evening the androids that were working around the local
-    park had a malfunction leading them to attack and kill many people including
-    children... '
 --- !u!114 &1679058878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3347,9 +3325,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e72a02e855ccaaf47b3e553c1f8300bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
-  titulo: Objeto Interativo
-  textoConteudo: "Escreve aqui o texto que aparecer\xE1 quando o jogador interagir
-    com este objeto."
+  titulo: Park Incident Report
+  textoConteudo: There was a system error that caused a malfunction that lead to
+    the death of many innocent people. We concluded that it was a bug on the system
+    and there was no human error behind it. No further investigation needed.
   distanciaInteracao: 2
 --- !u!1 &1698312852 stripped
 GameObject:
