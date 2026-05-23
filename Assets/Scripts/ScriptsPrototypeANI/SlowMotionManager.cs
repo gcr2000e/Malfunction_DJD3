@@ -1,10 +1,6 @@
 using System.Collections;
 using UnityEngine;
 
-/// <summary>
-/// NÃO altera o Time.timeScale — usa um SpeedMultiplier que as balas
-/// e inimigos lêem manualmente. O jogador ignora-o completamente.
-/// </summary>
 public class SlowMotionManager : MonoBehaviour
 {
     public static SlowMotionManager Instance { get; private set; }
@@ -19,7 +15,6 @@ public class SlowMotionManager : MonoBehaviour
     [Tooltip("Velocidade de retorno ao normal")]
     [SerializeField] private float recoverySpeed = 5f;
 
-    // Lido pelas balas e inimigos para escalar o seu movimento
     public float SpeedMultiplier { get; private set; } = 1f;
     public bool IsSlowMo { get; private set; } = false;
 
@@ -40,9 +35,11 @@ public class SlowMotionManager : MonoBehaviour
 
     private IEnumerator SlowMotionRoutine()
     {
+        // Ativa slow-mo
         IsSlowMo = true;
         SpeedMultiplier = slowMultiplier;
 
+        // Espera slowDuration em tempo REAL
         float elapsed = 0f;
         while (elapsed < slowDuration)
         {
@@ -50,6 +47,7 @@ public class SlowMotionManager : MonoBehaviour
             yield return null;
         }
 
+        // Volta suavemente a 1
         while (SpeedMultiplier < 1f)
         {
             SpeedMultiplier = Mathf.MoveTowards(
@@ -60,5 +58,14 @@ public class SlowMotionManager : MonoBehaviour
         SpeedMultiplier = 1f;
         IsSlowMo = false;
         activeCoroutine = null;
+    }
+
+    // Debug visual no Inspector para confirmares que o valor muda
+    private void OnGUI()
+    {
+#if UNITY_EDITOR
+        GUI.Label(new Rect(10, 10, 300, 20),
+            $"SpeedMultiplier: {SpeedMultiplier:F2}  |  SlowMo: {IsSlowMo}");
+#endif
     }
 }
