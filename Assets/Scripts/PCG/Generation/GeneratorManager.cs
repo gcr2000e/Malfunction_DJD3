@@ -7,7 +7,7 @@ public class BranchingDungeonGenerator : MonoBehaviour
     [SerializeField]
     private RoomDatabase roomDatabase;
 
-    [Header("Settings")]
+    [Header("Generation Settings")]
     [SerializeField]
     private int totalRooms = 15;
 
@@ -21,12 +21,11 @@ public class BranchingDungeonGenerator : MonoBehaviour
     [SerializeField]
     private EnemySpawner enemySpawner;
 
-    [SerializeField]
-    private PickupSpawner pickupSpawner;
+    private Dictionary<Vector2Int, RoomData> placedRooms =
+        new();
 
-    private Dictionary<Vector2Int, RoomData> placedRooms = new();
-
-    private List<Vector2Int> occupiedPositions = new();
+    private List<Vector2Int> occupiedPositions =
+        new();
 
     private static readonly Vector2Int[] Directions =
     {
@@ -60,7 +59,8 @@ public class BranchingDungeonGenerator : MonoBehaviour
         placedRooms.Add(startPos, startRoom);
         occupiedPositions.Add(startPos);
 
-        List<Vector2Int> frontier = new() { startPos };
+        List<Vector2Int> frontier =
+            new() { startPos };
 
         while (placedRooms.Count < totalRooms &&
                frontier.Count > 0)
@@ -80,7 +80,8 @@ public class BranchingDungeonGenerator : MonoBehaviour
             }
 
             var chosen =
-                neighbors[Random.Range(0, neighbors.Count)];
+                neighbors[
+                    Random.Range(0, neighbors.Count)];
 
             int roomIndex = placedRooms.Count;
 
@@ -110,8 +111,12 @@ public class BranchingDungeonGenerator : MonoBehaviour
                 Quaternion.identity,
                 transform);
 
-            placedRooms.Add(chosen.gridPos, newRoom);
-            occupiedPositions.Add(chosen.gridPos);
+            placedRooms.Add(
+                chosen.gridPos,
+                newRoom);
+
+            occupiedPositions.Add(
+                chosen.gridPos);
 
             frontier.Add(chosen.gridPos);
 
@@ -124,7 +129,8 @@ public class BranchingDungeonGenerator : MonoBehaviour
     private List<(Vector2Int, DoorDirection)>
         GetAvailableNeighbors(Vector2Int origin)
     {
-        List<(Vector2Int, DoorDirection)> results = new();
+        List<(Vector2Int, DoorDirection)> results =
+            new();
 
         foreach (Vector2Int dir in Directions)
         {
@@ -149,8 +155,6 @@ public class BranchingDungeonGenerator : MonoBehaviour
         {
             enemySpawner?.SpawnEnemies(room);
         }
-
-        pickupSpawner?.SpawnPickups(room);
     }
 
     private void SpawnPlayer()
@@ -190,16 +194,14 @@ public class BranchingDungeonGenerator : MonoBehaviour
 
         float r = Random.value;
 
-        if (r < 0.60f)
+        if (r < 0.7f)
             return RoomType.Combat;
-
-        if (r < 0.80f)
-            return RoomType.Lore;
 
         return RoomType.Empty;
     }
 
-    private DoorDirection VectorToDoorDirection(Vector2Int dir)
+    private DoorDirection VectorToDoorDirection(
+        Vector2Int dir)
     {
         if (dir == Vector2Int.up)
             return DoorDirection.North;
@@ -218,10 +220,18 @@ public class BranchingDungeonGenerator : MonoBehaviour
     {
         return direction switch
         {
-            DoorDirection.North => DoorDirection.South,
-            DoorDirection.South => DoorDirection.North,
-            DoorDirection.East => DoorDirection.West,
-            DoorDirection.West => DoorDirection.East,
+            DoorDirection.North =>
+                DoorDirection.South,
+
+            DoorDirection.South =>
+                DoorDirection.North,
+
+            DoorDirection.East =>
+                DoorDirection.West,
+
+            DoorDirection.West =>
+                DoorDirection.East,
+
             _ => DoorDirection.North
         };
     }
