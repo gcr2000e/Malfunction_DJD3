@@ -17,11 +17,5 @@ MonoBehaviour:
     roomType: 0
     rooms:
     - {fileID: 9002519633561712633, guid: 7ec5ba7167c8b4c4585b3f1aefa1dac5, type: 3}
-  - sectorType: 0
-    roomType: 1
-    rooms:
-    - {fileID: 2464253421835915123, guid: e9e710d37a5cb4842a63b27899f93c2a, type: 3}
-  - sectorType: 1
-    roomType: 1
-    rooms:
-    - {fileID: 8729909584994428159, guid: 991301e518a188240ac5d34cd6764a5c, type: 3}
+    - {fileID: 9002519633561712633, guid: 7ec5ba7167c8b4c4585b3f1aefa1dac5, type: 3}
+    - {fileID: 9002519633561712633, guid: 7ec5ba7167c8b4c4585b3f1aefa1dac5, type: 3}

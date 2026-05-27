@@ -644,7 +644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BranchingDungeonGenerator
   roomDatabase: {fileID: 11400000, guid: ea51d46ce4a076148812be52dde98a29, type: 2}
-  totalRooms: 3
+  totalRooms: 15
   gridSize: 20
   playerSpawner: {fileID: 780344533}
   enemySpawner: {fileID: 1373310778}
@@ -2349,6 +2349,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1012264016440109826, guid: a53207f7ec847644a9601f4770b6328f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 953eab645287c8d4a87ce23a90cb4d25, type: 2}
     - target: {fileID: 2063512415789768811, guid: a53207f7ec847644a9601f4770b6328f, type: 3}
       propertyPath: empSlider
       value: 
@@ -2385,6 +2389,18 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[7]'
       value: 
       objectReference: {fileID: 2100000, guid: f05f96f3ddc1a7a4a886e0955089081b, type: 2}
+    - target: {fileID: 3236027625056783151, guid: a53207f7ec847644a9601f4770b6328f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 953eab645287c8d4a87ce23a90cb4d25, type: 2}
+    - target: {fileID: 3349211093624311058, guid: a53207f7ec847644a9601f4770b6328f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 953eab645287c8d4a87ce23a90cb4d25, type: 2}
+    - target: {fileID: 4672429799977060093, guid: a53207f7ec847644a9601f4770b6328f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 953eab645287c8d4a87ce23a90cb4d25, type: 2}
     - target: {fileID: 4724857766307262701, guid: a53207f7ec847644a9601f4770b6328f, type: 3}
       propertyPath: healthSlider
       value: 
@@ -2397,6 +2413,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5289580117627000989, guid: a53207f7ec847644a9601f4770b6328f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 953eab645287c8d4a87ce23a90cb4d25, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
