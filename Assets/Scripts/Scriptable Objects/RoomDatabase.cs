@@ -8,7 +8,9 @@ public class RoomDatabase : ScriptableObject
     public class RoomEntry
     {
         public SectorType sectorType;
+
         public RoomType roomType;
+
         public RoomData[] rooms;
     }
 

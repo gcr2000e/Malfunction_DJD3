@@ -155,15 +155,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1558708011045183883, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 40.57
+      value: 6.54
       objectReference: {fileID: 0}
     - target: {fileID: 1558708011045183883, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.14
+      value: 0.11
       objectReference: {fileID: 0}
     - target: {fileID: 1558708011045183883, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.41
+      value: -8.71
       objectReference: {fileID: 0}
     - target: {fileID: 1558708011045183883, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -193,6 +193,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2800086730708486057, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3035c0f6e3ea8c6498103917d105b4f0, type: 2}
+    - target: {fileID: 3783691276582874662, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3035c0f6e3ea8c6498103917d105b4f0, type: 2}
     - target: {fileID: 7216496776578535969, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
       propertyPath: m_Name
       value: RangedEnemy (3)
@@ -292,15 +300,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1558708011045183883, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 39.243
+      value: 6.29
       objectReference: {fileID: 0}
     - target: {fileID: 1558708011045183883, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.14
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 1558708011045183883, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 13.732
+      value: 15.48
       objectReference: {fileID: 0}
     - target: {fileID: 1558708011045183883, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -330,6 +338,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2800086730708486057, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3035c0f6e3ea8c6498103917d105b4f0, type: 2}
+    - target: {fileID: 3783691276582874662, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3035c0f6e3ea8c6498103917d105b4f0, type: 2}
     - target: {fileID: 7216496776578535969, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
       propertyPath: m_Name
       value: RangedEnemy (4)
@@ -445,6 +461,63 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.15000005, y: 0.010000002, z: 0.004802972}
   m_Center: {x: -0.06499993, y: 0.035742342, z: -0.0000000030267977}
+--- !u!1001 &105802021
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 503207416828626448, guid: 78897bf80a7b8e246818997de5b32e20, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 503207416828626448, guid: 78897bf80a7b8e246818997de5b32e20, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 503207416828626448, guid: 78897bf80a7b8e246818997de5b32e20, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 503207416828626448, guid: 78897bf80a7b8e246818997de5b32e20, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071071
+      objectReference: {fileID: 0}
+    - target: {fileID: 503207416828626448, guid: 78897bf80a7b8e246818997de5b32e20, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 503207416828626448, guid: 78897bf80a7b8e246818997de5b32e20, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70710653
+      objectReference: {fileID: 0}
+    - target: {fileID: 503207416828626448, guid: 78897bf80a7b8e246818997de5b32e20, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 503207416828626448, guid: 78897bf80a7b8e246818997de5b32e20, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 503207416828626448, guid: 78897bf80a7b8e246818997de5b32e20, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 503207416828626448, guid: 78897bf80a7b8e246818997de5b32e20, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5304038163667879431, guid: 78897bf80a7b8e246818997de5b32e20, type: 3}
+      propertyPath: m_Name
+      value: HealthPickup (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 78897bf80a7b8e246818997de5b32e20, type: 3}
 --- !u!1 &156855464
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,13 +1096,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2800086730708486057, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3035c0f6e3ea8c6498103917d105b4f0, type: 2}
+    - target: {fileID: 3783691276582874662, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3035c0f6e3ea8c6498103917d105b4f0, type: 2}
     - target: {fileID: 7216496776578535969, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
       propertyPath: m_Name
       value: RangedEnemy (7)
       objectReference: {fileID: 0}
     - target: {fileID: 7216496776578535969, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8856852322719917364, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
       propertyPath: m_UseGravity
@@ -1504,9 +1585,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2800086730708486057, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3035c0f6e3ea8c6498103917d105b4f0, type: 2}
+    - target: {fileID: 3783691276582874662, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3035c0f6e3ea8c6498103917d105b4f0, type: 2}
     - target: {fileID: 7216496776578535969, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
       propertyPath: m_Name
       value: RangedEnemy (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7216496776578535969, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8856852322719917364, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
       propertyPath: m_UseGravity
@@ -1869,13 +1962,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 772359890}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e45710384890b44697a8a13f5282401, type: 3}
+  m_Script: {fileID: 11500000, guid: e72a02e855ccaaf47b3e553c1f8300bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PDAInteractable
-  pdaTitle: Incident Report
-  pdaMessage: "Incident n\xBA: 12\n\nPriority: High\n\nIncident Description: System
-    bug that lead to a malfunction on the androinds on the park sector, no human
-    error behind this incident. "
+  titulo: System Error Kills Many
+  textoConteudo: During today's evening a malfunction the androids that were close
+    to the local park lead them to attack and kill many civilian people. The company
+    Stellar Minds opening an investigation to find the causes of this tragic incident.
+  distanciaInteracao: 2
 --- !u!1 &921562302
 GameObject:
   m_ObjectHideFlags: 0
@@ -2134,6 +2228,63 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.18000005, y: 0.08, z: 0.004802975}
   m_Center: {x: -0.08000005, y: -0.009999998, z: 0.00000023946632}
+--- !u!1001 &1036331032
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 503207416828626448, guid: 78897bf80a7b8e246818997de5b32e20, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 503207416828626448, guid: 78897bf80a7b8e246818997de5b32e20, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 503207416828626448, guid: 78897bf80a7b8e246818997de5b32e20, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 14.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 503207416828626448, guid: 78897bf80a7b8e246818997de5b32e20, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071071
+      objectReference: {fileID: 0}
+    - target: {fileID: 503207416828626448, guid: 78897bf80a7b8e246818997de5b32e20, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 503207416828626448, guid: 78897bf80a7b8e246818997de5b32e20, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70710653
+      objectReference: {fileID: 0}
+    - target: {fileID: 503207416828626448, guid: 78897bf80a7b8e246818997de5b32e20, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 503207416828626448, guid: 78897bf80a7b8e246818997de5b32e20, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 503207416828626448, guid: 78897bf80a7b8e246818997de5b32e20, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 503207416828626448, guid: 78897bf80a7b8e246818997de5b32e20, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5304038163667879431, guid: 78897bf80a7b8e246818997de5b32e20, type: 3}
+      propertyPath: m_Name
+      value: HealthPickup (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 78897bf80a7b8e246818997de5b32e20, type: 3}
 --- !u!1 &1110307972 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7768796009490323730, guid: 4b3f8544a29f0034c802c121650f9c07, type: 3}
@@ -2273,9 +2424,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 12694ebe26915d047b73c70fee651e5b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1679058876}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 12694ebe26915d047b73c70fee651e5b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1679058879}
@@ -2501,17 +2649,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1258565019}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e45710384890b44697a8a13f5282401, type: 3}
+  m_Script: {fileID: 11500000, guid: e72a02e855ccaaf47b3e553c1f8300bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PDAInteractable
-  pdaTitle: Log #1
-  pdaMessage: 'The android on park had a system error during their routines and killed
-    many people...
-
-    We still don''t know the real cause of this error...
-
-    Further
-    investigation needed... '
+  titulo: 'System Log 1# '
+  textoConteudo: "> Set all androids in the park in attack mode?\n\xBB Yes\n> All
+    android were set on attack mode... Threat level: Max\n>... "
+  distanciaInteracao: 2
 --- !u!1 &1275786858 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3908029602429038434, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
@@ -2970,15 +3114,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1558708011045183883, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 32.67619
+      value: 7.72
       objectReference: {fileID: 0}
     - target: {fileID: 1558708011045183883, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.19
       objectReference: {fileID: 0}
     - target: {fileID: 1558708011045183883, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.472337
+      value: 0.41
       objectReference: {fileID: 0}
     - target: {fileID: 1558708011045183883, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3008,6 +3152,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2800086730708486057, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3035c0f6e3ea8c6498103917d105b4f0, type: 2}
+    - target: {fileID: 3783691276582874662, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3035c0f6e3ea8c6498103917d105b4f0, type: 2}
     - target: {fileID: 7216496776578535969, guid: 09a95136a5dd11a4cbad1c544cb03ebc, type: 3}
       propertyPath: m_Name
       value: RangedEnemy (2)
@@ -3112,7 +3264,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1544840027
 Transform:
   m_ObjectHideFlags: 0
@@ -3299,22 +3451,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 12694ebe26915d047b73c70fee651e5b, type: 3}
   m_PrefabInstance: {fileID: 1126570242}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1679058876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1679058875}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e45710384890b44697a8a13f5282401, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PDAInteractable
-  pdaTitle: Androids Malfunction Kills Many
-  pdaMessage: 'During this evening the androids that were working around the local
-    park had a malfunction leading them to attack and kill many people including
-    children... '
 --- !u!114 &1679058878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3347,9 +3483,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e72a02e855ccaaf47b3e553c1f8300bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
-  titulo: Objeto Interativo
-  textoConteudo: "Escreve aqui o texto que aparecer\xE1 quando o jogador interagir
-    com este objeto."
+  titulo: Park Incident Report
+  textoConteudo: There was a system error that caused a malfunction that lead to
+    the death of many innocent people. We concluded that it was a bug on the system
+    and there was no human error behind it. No further investigation needed.
   distanciaInteracao: 2
 --- !u!1 &1698312852 stripped
 GameObject:
@@ -4018,5 +4155,7 @@ SceneRoots:
   - {fileID: 479394608}
   - {fileID: 1505784753}
   - {fileID: 724632139}
+  - {fileID: 1036331032}
+  - {fileID: 105802021}
   - {fileID: 1911340310}
   - {fileID: 1668523639}

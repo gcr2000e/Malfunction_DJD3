@@ -14,18 +14,18 @@ public class RoomData : MonoBehaviour
 
     public Transform[] enemySpawnPoints;
 
-    public Transform[] pdaSpawnPoints;
-
-    public Transform[] medkitSpawnPoints;
-
     public bool HasDoor(DoorDirection direction)
     {
-        if (doors == null) return false;
+        if (doors == null)
+            return false;
 
         foreach (DoorPoint door in doors)
         {
-            if (door != null && door.direction == direction)
+            if (door != null &&
+                door.direction == direction)
+            {
                 return true;
+            }
         }
 
         return false;

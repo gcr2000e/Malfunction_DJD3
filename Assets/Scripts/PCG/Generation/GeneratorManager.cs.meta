@@ -1,2 +1,14 @@
 fileFormatVersion: 2
 guid: a8cd93b731df5cf4ba35a5f4eb9126dd
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - roomDatabase: {fileID: 11400000, guid: ea51d46ce4a076148812be52dde98a29, type: 2}
+  - playerSpawner: {instanceID: 0}
+  - enemySpawner: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

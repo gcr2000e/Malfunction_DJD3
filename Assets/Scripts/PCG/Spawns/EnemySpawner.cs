@@ -3,12 +3,17 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField]
-    private GameObject enemyPrefab;
+    private GameObject[] enemyPrefabs;
 
     public void SpawnEnemies(RoomData room)
     {
         if (room == null ||
-            room.enemySpawnPoints == null)
+            room.enemySpawnPoints == null ||
+            room.enemySpawnPoints.Length == 0)
+            return;
+
+        if (enemyPrefabs == null ||
+            enemyPrefabs.Length == 0)
             return;
 
         foreach (Transform spawnPoint in room.enemySpawnPoints)
@@ -16,12 +21,15 @@ public class EnemySpawner : MonoBehaviour
             if (spawnPoint == null)
                 continue;
 
+            GameObject randomEnemy =
+                enemyPrefabs[
+                    Random.Range(0, enemyPrefabs.Length)];
+
             Instantiate(
-                enemyPrefab,
+                randomEnemy,
                 spawnPoint.position,
                 spawnPoint.rotation,
                 room.transform);
-
         }
     }
 }
