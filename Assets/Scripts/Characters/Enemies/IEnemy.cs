@@ -11,7 +11,7 @@ public abstract class IEnemy : MonoBehaviour
     [SerializeField]
     private bool canMove = true;
 
-    protected Rigidbody rb;
+    protected CharacterController cc;
 
     [Header("Combat")]
     [SerializeField]
@@ -29,7 +29,7 @@ public abstract class IEnemy : MonoBehaviour
 
     protected virtual void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        cc = GetComponent<CharacterController>();
         animator = GetComponentInChildren<Animator>();
 
         // Get player as target when spawned
@@ -51,10 +51,6 @@ public abstract class IEnemy : MonoBehaviour
                     Attack();
                 else
                     DoMovement();
-            }
-            else
-            {
-                rb.linearVelocity = Vector3.zero;
             }
         }
     }
