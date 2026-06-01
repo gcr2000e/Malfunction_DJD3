@@ -29,6 +29,12 @@ public class PlayerHealth : IHealth
         }
     }
 
+    public void IncreaseMaxHealth(int addedHealth)
+    {
+        maxHealth += addedHealth;
+        Heal(addedHealth);
+    }
+
     protected override void OnDeath()
     {
         // Set Health to 0
