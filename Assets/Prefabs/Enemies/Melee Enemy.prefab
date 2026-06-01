@@ -232,7 +232,7 @@ MonoBehaviour:
   moveSpeed: 4
   canMove: 1
   attackStrenght: 10
-  attackDistance: 2
+  attackDistance: 1
   model: {fileID: 4811729470282819958}
   canRotate: 1
 --- !u!95 &4329809833952655897
