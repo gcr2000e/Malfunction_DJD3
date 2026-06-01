@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Prototype.unity
     guid: faadd12c96d1dc24dbd0fe29ab57d216
   - enabled: 1
-    path: Assets/Scenes/Prototype_Ani.unity
-    guid: d1e868844bfec1840a7e1b51c9ace370
+    path: Assets/Scenes/Prototype_Ani_2.unity
+    guid: 7fdbcd93c6dca0447932e00a35daa547
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
