@@ -2761,7 +2761,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5165f24654aa66a41a5dd8858f8cb6e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorManager
-  doorAnimator: {fileID: 2484315090816332679}
 --- !u!65 &1262330347
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3993,7 +3992,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5165f24654aa66a41a5dd8858f8cb6e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorManager
-  doorAnimator: {fileID: 2484315090816332679}
 --- !u!65 &1675838910
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11744,7 +11742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8058607928487502498, guid: 435756a773d0c9b47b1dbdca2de19cdc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.83
+      value: -0.403
       objectReference: {fileID: 0}
     - target: {fileID: 8058607928487502498, guid: 435756a773d0c9b47b1dbdca2de19cdc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11752,7 +11750,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8058607928487502498, guid: 435756a773d0c9b47b1dbdca2de19cdc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.8
+      value: 7.071
       objectReference: {fileID: 0}
     - target: {fileID: 8058607928487502498, guid: 435756a773d0c9b47b1dbdca2de19cdc, type: 3}
       propertyPath: m_LocalRotation.w

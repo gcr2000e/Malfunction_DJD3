@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BranchingDungeonGenerator : MonoBehaviour
+public class GeneratorManager : MonoBehaviour
 {
     [Header("Database")]
     [SerializeField]
