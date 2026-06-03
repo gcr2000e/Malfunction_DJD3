@@ -10,6 +10,8 @@ public class PlayerCombat : MonoBehaviour
     private int attackPower;
 
     private float attackMultiplierUpgrade = 1;
+    public float AtkBonus
+    { get { return attackMultiplierUpgrade; } }
     private float attackMultiplierBuff = 1;
 
     [Header("AnimationControl")]
