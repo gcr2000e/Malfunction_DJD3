@@ -4,7 +4,7 @@ using System.Linq;
 public class RoomControl : MonoBehaviour
 {
     [SerializeField]
-    private DoorControl entrance, exit;
+    private DoorControl[] doors;
 
     [SerializeField]
     private IEnemy[] enemies;
@@ -17,8 +17,9 @@ public class RoomControl : MonoBehaviour
             // Make it so game can't be saved while in combat
             FindAnyObjectByType<SaveSystem>()
                 .SetSaveStatus(false);
-            // Close entrance door
-            entrance.Close();
+            // Close doors
+            foreach (DoorControl door in doors)
+                door.Close();
         }
     }
 
@@ -26,7 +27,8 @@ public class RoomControl : MonoBehaviour
     {
         if (enemies.All(enemy => enemy == null))
         {
-            exit.Open();
+            foreach (DoorControl door in doors)
+                door.Open();
             // Autosave when combat is over
             FindAnyObjectByType<SaveSystem>()
                 .AutoSave();
