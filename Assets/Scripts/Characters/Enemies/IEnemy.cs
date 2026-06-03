@@ -33,12 +33,25 @@ public abstract class IEnemy : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
 
         // Get player as target when spawned
-        target = FindFirstObjectByType<PlayerCombat>()
-            .gameObject
-            .transform;
+        //target = FindFirstObjectByType<PlayerCombat>()
+            //.gameObject
+            //.transform;
+
+        PlayerCombat player = FindFirstObjectByType<PlayerCombat>();
+
+        if (player == null)
+        {
+            Debug.LogError("PlayerCombat not found in the scene. " +
+                "Please ensure there is a PlayerCombat component present.");
+        }
+
+        target = player.gameObject.transform;
     }
     private void Update()
     {
+        if (target == null)
+            return; 
+
         if (!TargetBlocked())
         {
             if (canRotate)

@@ -7,232 +7,100 @@ public class GeneratorManager : MonoBehaviour
     [SerializeField]
     private RoomDatabase roomDatabase;
 
-    [Header("Generation Settings")]
+    [Header("Generation")]
     [SerializeField]
-    private int totalRooms = 15;
+    private int roomCount = 15;
 
-    [SerializeField]
-    private float gridSize = 20f;
-
-    [Header("References")]
-    [SerializeField]
-    private PlayerSpawner playerSpawner;
-
-    [SerializeField]
-    private EnemySpawner enemySpawner;
-
-    private Dictionary<Vector2Int, RoomData> placedRooms =
+    private readonly List<RoomData> spawnedRooms =
         new();
-
-    private List<Vector2Int> occupiedPositions =
-        new();
-
-    private static readonly Vector2Int[] Directions =
-    {
-        Vector2Int.up,
-        Vector2Int.down,
-        Vector2Int.left,
-        Vector2Int.right
-    };
 
     private void Start()
     {
-        GenerateDungeon();
+        Generate();
     }
 
-    private void GenerateDungeon()
+    private void Generate()
     {
-        Vector2Int startPos = Vector2Int.zero;
-
-        RoomData startPrefab =
-            roomDatabase.GetRandomRoom(
-                SectorType.PerimeterSecurity,
-                RoomType.Start,
-                DoorDirection.North);
-
-        RoomData startRoom = Instantiate(
-            startPrefab,
-            Vector3.zero,
-            Quaternion.identity,
-            transform);
-
-        placedRooms.Add(startPos, startRoom);
-        occupiedPositions.Add(startPos);
-
-        List<Vector2Int> frontier =
-            new() { startPos };
-
-        while (placedRooms.Count < totalRooms &&
-               frontier.Count > 0)
-        {
-            Vector2Int currentPos =
-                frontier[Random.Range(0, frontier.Count)];
-
-            List<(Vector2Int gridPos,
-                  DoorDirection requiredDoor)>
-                neighbors =
-                    GetAvailableNeighbors(currentPos);
-
-            if (neighbors.Count == 0)
-            {
-                frontier.Remove(currentPos);
-                continue;
-            }
-
-            var chosen =
-                neighbors[
-                    Random.Range(0, neighbors.Count)];
-
-            int roomIndex = placedRooms.Count;
-
-            SectorType sector =
-                GetSectorForIndex(roomIndex);
-
-            RoomType roomType =
-                GetRoomTypeForIndex(roomIndex);
-
-            RoomData roomPrefab =
-                roomDatabase.GetRandomRoom(
-                    sector,
-                    roomType,
-                    chosen.requiredDoor);
-
-            if (roomPrefab == null)
-                continue;
-
-            Vector3 worldPos = new(
-                chosen.gridPos.x * gridSize,
-                0f,
-                chosen.gridPos.y * gridSize);
-
-            RoomData newRoom = Instantiate(
-                roomPrefab,
-                worldPos,
+        RoomData startRoom =
+            Instantiate(
+                roomDatabase.GetRandomRoom(),
+                Vector3.zero,
                 Quaternion.identity,
                 transform);
 
-            placedRooms.Add(
-                chosen.gridPos,
-                newRoom);
+        spawnedRooms.Add(startRoom);
 
-            occupiedPositions.Add(
-                chosen.gridPos);
-
-            frontier.Add(chosen.gridPos);
-
-            SpawnRoomContent(newRoom);
-        }
-
-        SpawnPlayer();
-    }
-
-    private List<(Vector2Int, DoorDirection)>
-        GetAvailableNeighbors(Vector2Int origin)
-    {
-        List<(Vector2Int, DoorDirection)> results =
-            new();
-
-        foreach (Vector2Int dir in Directions)
+        for (int i = 1; i < roomCount; i++)
         {
-            Vector2Int target = origin + dir;
-
-            if (occupiedPositions.Contains(target))
-                continue;
-
-            DoorDirection requiredDoor =
-                GetOppositeDirection(
-                    VectorToDoorDirection(dir));
-
-            results.Add((target, requiredDoor));
-        }
-
-        return results;
-    }
-
-    private void SpawnRoomContent(RoomData room)
-    {
-        if (room.roomType == RoomType.Combat)
-        {
-            enemySpawner?.SpawnEnemies(room);
+            TrySpawnRoom();
         }
     }
 
-    private void SpawnPlayer()
+    private void TrySpawnRoom()
     {
-        RoomData startRoom =
-            placedRooms[Vector2Int.zero];
+        RoomData existingRoom =
+            spawnedRooms[
+                Random.Range(0, spawnedRooms.Count)];
 
-        if (startRoom.playerSpawnPoint != null)
+        DoorPoint existingDoor =
+            existingRoom.GetRandomFreeDoor();
+
+        if (existingDoor == null)
+            return;
+
+        RoomData roomPrefab =
+            roomDatabase.GetRandomRoom();
+
+        if (roomPrefab == null)
+            return;
+
+        RoomData newRoom =
+            Instantiate(
+                roomPrefab,
+                Vector3.zero,
+                Quaternion.identity,
+                transform);
+
+        DoorPoint newDoor =
+            newRoom.GetRandomFreeDoor();
+
+        if (newDoor == null)
         {
-            playerSpawner.SpawnPlayer(
-                startRoom.playerSpawnPoint);
+            Destroy(newRoom.gameObject);
+            return;
         }
+
+        AlignRoom(
+            existingDoor,
+            newRoom,
+            newDoor);
+
+        existingDoor.connected = true;
+        newDoor.connected = true;
+
+        spawnedRooms.Add(newRoom);
     }
 
-    private SectorType GetSectorForIndex(int roomIndex)
+    private void AlignRoom(
+        DoorPoint targetDoor,
+        RoomData room,
+        DoorPoint roomDoor)
     {
-        float progress =
-            (float)roomIndex /
-            Mathf.Max(1, totalRooms - 1);
+        float angle =
+            Vector3.SignedAngle(
+                roomDoor.transform.forward,
+                -targetDoor.transform.forward,
+                Vector3.up);
 
-        if (progress < 0.25f)
-            return SectorType.PerimeterSecurity;
+        room.transform.Rotate(
+            0f,
+            angle,
+            0f);
 
-        if (progress < 0.50f)
-            return SectorType.DevelopmentLabs;
+        Vector3 offset =
+            targetDoor.transform.position -
+            roomDoor.transform.position;
 
-        if (progress < 0.75f)
-            return SectorType.ProductionCore;
-
-        return SectorType.CentralIntelligence;
-    }
-
-    private RoomType GetRoomTypeForIndex(int roomIndex)
-    {
-        if (roomIndex == totalRooms - 1)
-            return RoomType.Final;
-
-        float r = Random.value;
-
-        if (r < 0.7f)
-            return RoomType.Combat;
-
-        return RoomType.Empty;
-    }
-
-    private DoorDirection VectorToDoorDirection(
-        Vector2Int dir)
-    {
-        if (dir == Vector2Int.up)
-            return DoorDirection.North;
-
-        if (dir == Vector2Int.down)
-            return DoorDirection.South;
-
-        if (dir == Vector2Int.left)
-            return DoorDirection.West;
-
-        return DoorDirection.East;
-    }
-
-    private DoorDirection GetOppositeDirection(
-        DoorDirection direction)
-    {
-        return direction switch
-        {
-            DoorDirection.North =>
-                DoorDirection.South,
-
-            DoorDirection.South =>
-                DoorDirection.North,
-
-            DoorDirection.East =>
-                DoorDirection.West,
-
-            DoorDirection.West =>
-                DoorDirection.East,
-
-            _ => DoorDirection.North
-        };
+        room.transform.position += offset;
     }
 }

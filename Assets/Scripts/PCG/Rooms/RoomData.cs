@@ -2,32 +2,23 @@ using UnityEngine;
 
 public class RoomData : MonoBehaviour
 {
-    [Header("Room Info")]
-    public RoomType roomType;
-    public SectorType sectorType;
-
-    [Header("Doors")]
     public DoorPoint[] doors;
 
-    [Header("Spawn Points")]
-    public Transform playerSpawnPoint;
-
-    public Transform[] enemySpawnPoints;
-
-    public bool HasDoor(DoorDirection direction)
+    public DoorPoint GetRandomFreeDoor()
     {
-        if (doors == null)
-            return false;
+        System.Collections.Generic.List<DoorPoint> freeDoors =
+            new();
 
         foreach (DoorPoint door in doors)
         {
-            if (door != null &&
-                door.direction == direction)
-            {
-                return true;
-            }
+            if (!door.connected)
+                freeDoors.Add(door);
         }
 
-        return false;
+        if (freeDoors.Count == 0)
+            return null;
+
+        return freeDoors[
+            Random.Range(0, freeDoors.Count)];
     }
 }
