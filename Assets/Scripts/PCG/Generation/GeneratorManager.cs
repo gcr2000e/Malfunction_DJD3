@@ -7,37 +7,108 @@ public class GeneratorManager : MonoBehaviour
     [SerializeField]
     private RoomDatabase roomDatabase;
 
+    [Header("Seed")]
+    [SerializeField]
+    private bool randomizeSeed = true;
+    [SerializeField]
+    private int seed = 0;
+
     [Header("Generation")]
     [SerializeField]
     private int roomCount = 15;
+    [Tooltip("Máximo de tentativas por sala antes de desistir")]
+    [SerializeField]
+    private int maxAttemptsPerRoom = 8;
 
     private readonly List<RoomData> spawnedRooms =
         new();
 
-    private void Start()
+    // Overload que usa seed do inspector (ou aleatória).
+    public void Generate()
     {
-        Generate();
+        if (randomizeSeed)
+            seed = System.Environment.TickCount;
+
+        Generate(seed);
     }
 
-    private void Generate()
+    // Método público que recebe seed para geração determinística.
+    public void Generate(int seed)
     {
-        RoomData startRoom =
-            Instantiate(
-                roomDatabase.GetRandomRoom(),
+        Random.InitState(seed);
+
+        spawnedRooms.Clear();
+
+        // Coloca a sala inicial (primeiro elemento) com retry.
+        RoomData startPrefab = roomDatabase.GetStartRoom();
+        if (startPrefab == null)
+        {
+            Debug.LogWarning("RoomDatabase sem salas definidas.");
+            return;
+        }
+
+        bool startPlaced = false;
+        int startAttempts = 0;
+        while (!startPlaced && startAttempts < maxAttemptsPerRoom)
+        {
+            startAttempts++;
+            RoomData startRoom = Instantiate(
+                startPrefab,
                 Vector3.zero,
                 Quaternion.identity,
                 transform);
 
-        spawnedRooms.Add(startRoom);
+            // Verifica se a sala inicial tem pelo menos uma porta livre.
+            if (startRoom.GetRandomFreeDoor() == null)
+            {
+                Destroy(startRoom.gameObject);
+                continue;
+            }
 
+            spawnedRooms.Add(startRoom);
+            startPlaced = true;
+        }
+
+        if (!startPlaced)
+        {
+            Debug.LogWarning("Falha ao posicionar a sala inicial após tentativas.");
+            return;
+        }
+
+        // Gera as salas intermediárias e tenta garantir a última sala ser colocada e conectada.
         for (int i = 1; i < roomCount; i++)
         {
-            TrySpawnRoom();
+            bool isLast = (i == roomCount - 1);
+            RoomData forcedPrefab = isLast ? roomDatabase.GetEndRoom() : null;
+
+            bool placed = false;
+            int attempts = 0;
+            while (!placed && attempts < maxAttemptsPerRoom)
+            {
+                attempts++;
+                // Para sala final, usamos tentativa especial para garantir conexão.
+                if (isLast && forcedPrefab != null)
+                    placed = TryPlaceFinalRoom(forcedPrefab);
+                else
+                    placed = TrySpawnRoom(forcedPrefab);
+            }
+
+            if (!placed)
+            {
+                Debug.LogWarning($"Falha ao posicionar a sala #{i} (isLast={isLast}) após {maxAttemptsPerRoom} tentativas.");
+                break;
+            }
         }
+
+        Debug.Log($"Geração concluída (seed={seed}). Salas geradas: {spawnedRooms.Count}");
     }
 
-    private void TrySpawnRoom()
+    // Tenta spawnar uma sala (forçada ou aleatória). Retorna true se conectou com sucesso.
+    private bool TrySpawnRoom(RoomData forcedPrefab = null)
     {
+        if (spawnedRooms.Count == 0)
+            return false;
+
         RoomData existingRoom =
             spawnedRooms[
                 Random.Range(0, spawnedRooms.Count)];
@@ -46,13 +117,13 @@ public class GeneratorManager : MonoBehaviour
             existingRoom.GetRandomFreeDoor();
 
         if (existingDoor == null)
-            return;
+            return false;
 
         RoomData roomPrefab =
-            roomDatabase.GetRandomRoom();
+            forcedPrefab ?? roomDatabase.GetRandomRoom();
 
         if (roomPrefab == null)
-            return;
+            return false;
 
         RoomData newRoom =
             Instantiate(
@@ -67,7 +138,7 @@ public class GeneratorManager : MonoBehaviour
         if (newDoor == null)
         {
             Destroy(newRoom.gameObject);
-            return;
+            return false;
         }
 
         AlignRoom(
@@ -79,6 +150,55 @@ public class GeneratorManager : MonoBehaviour
         newDoor.connected = true;
 
         spawnedRooms.Add(newRoom);
+        return true;
+    }
+
+    // Tentativa mais robusta para garantir que a sala final (forçada) seja conectada.
+    // Percorre tentativas buscando portas livres em salas existentes até conectar.
+    private bool TryPlaceFinalRoom(RoomData finalPrefab)
+    {
+        if (finalPrefab == null || spawnedRooms.Count == 0)
+            return false;
+
+        // Se o prefab final não tem portas (mesmo depois de instanciar), não é possível conectar.
+        // Repetimos várias tentativas tentando diferentes portas/posições.
+        int attempts = 0;
+        while (attempts < maxAttemptsPerRoom)
+        {
+            attempts++;
+
+            // Escolhe uma sala existente aleatoriamente
+            RoomData existingRoom =
+                spawnedRooms[Random.Range(0, spawnedRooms.Count)];
+
+            DoorPoint existingDoor = existingRoom.GetRandomFreeDoor();
+            if (existingDoor == null)
+                continue;
+
+            RoomData newRoom = Instantiate(
+                finalPrefab,
+                Vector3.zero,
+                Quaternion.identity,
+                transform);
+
+            DoorPoint newDoor = newRoom.GetRandomFreeDoor();
+            if (newDoor == null)
+            {
+                Destroy(newRoom.gameObject);
+                continue;
+            }
+
+            AlignRoom(existingDoor, newRoom, newDoor);
+
+            // Marca como conectadas
+            existingDoor.connected = true;
+            newDoor.connected = true;
+
+            spawnedRooms.Add(newRoom);
+            return true;
+        }
+
+        return false;
     }
 
     private void AlignRoom(
