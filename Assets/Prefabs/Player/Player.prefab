@@ -1761,7 +1761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab2a46e3a74c4c14a852c9a22ed7ea6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DisplayHealth
-  healthSlider: {fileID: 0}
+  healthSlider: {fileID: 5710091976438748689, guid: a4ef3714776174943b7a9fce2f5566c9, type: 3}
 --- !u!114 &2063512415789768811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1774,7 +1774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7c800580100f14f849ee7261a4c342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DisplayEMP
-  empSlider: {fileID: 0}
+  empSlider: {fileID: 6992735555335631319, guid: c346faeb5b6c42a4a907e20b981b81cc, type: 3}
 --- !u!114 &6017982701896492730
 MonoBehaviour:
   m_ObjectHideFlags: 0

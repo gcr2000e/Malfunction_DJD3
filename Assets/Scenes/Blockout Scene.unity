@@ -1462,7 +1462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GeneratorManager
   roomDatabase: {fileID: 11400000, guid: ea51d46ce4a076148812be52dde98a29, type: 2}
-  roomCount: 3
+  roomCount: 15
 --- !u!4 &693714638
 Transform:
   m_ObjectHideFlags: 0
@@ -10294,7 +10294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7794874955850495270, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8500407185389437502, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10337,8 +10337,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 8118260179041469473, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
@@ -15265,10 +15264,6 @@ PrefabInstance:
     - target: {fileID: 6825320001448093781, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
       propertyPath: m_Name
       value: Room 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6825320001448093781, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
