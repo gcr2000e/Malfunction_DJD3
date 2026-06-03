@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: RoomDatabase
   m_EditorClassIdentifier: Assembly-CSharp::RoomDatabase
   roomPrefabs:
+  - {fileID: 6704672829731463537, guid: 6067c2d83dd950e4caf1c7a4e54eedf6, type: 3}
   - {fileID: 7642484262940542713, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
   - {fileID: 8736725233730512445, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
   - {fileID: 428405237986252572, guid: f577ff73dad8462488e26f7555872dfe, type: 3}
