@@ -1035,7 +1035,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BranchingDungeonGenerator
   roomDatabase: {fileID: 11400000, guid: ea51d46ce4a076148812be52dde98a29, type: 2}
+  randomizeSeed: 1
+  seed: 0
   roomCount: 15
+  maxAttemptsPerRoom: 40
 --- !u!4 &301791932
 Transform:
   m_ObjectHideFlags: 0
@@ -2123,7 +2126,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5029237316214152839, guid: a53207f7ec847644a9601f4770b6328f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
