@@ -36323,8 +36323,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
   doors:
-  - {fileID: 8897284110504031966}
   - {fileID: 763367891191448404}
+  - {fileID: 8897284110504031966}
+  roomBounds: {fileID: 6857347175463624527}
 --- !u!1 &6836380558844564656
 GameObject:
   m_ObjectHideFlags: 0
@@ -50051,6 +50052,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
+    - target: {fileID: 3426864167045257333, guid: e01be810920e3f54f92d3076b5408714, type: 3}
+      propertyPath: m_Name
+      value: DoorPoint5
+      objectReference: {fileID: 0}
     - target: {fileID: 6773969287230896986, guid: e01be810920e3f54f92d3076b5408714, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14.112
@@ -50298,6 +50303,10 @@ PrefabInstance:
     - target: {fileID: 2839256418687142174, guid: e01be810920e3f54f92d3076b5408714, type: 3}
       propertyPath: m_Name
       value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 3426864167045257333, guid: e01be810920e3f54f92d3076b5408714, type: 3}
+      propertyPath: m_Name
+      value: DoorPoint4
       objectReference: {fileID: 0}
     - target: {fileID: 6773969287230896986, guid: e01be810920e3f54f92d3076b5408714, type: 3}
       propertyPath: m_LocalPosition.x

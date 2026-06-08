@@ -3,6 +3,7 @@ using UnityEngine;
 public class RoomData : MonoBehaviour
 {
     public DoorPoint[] doors;
+    public BoxCollider roomBounds;
 
     public DoorPoint GetRandomFreeDoor()
     {
