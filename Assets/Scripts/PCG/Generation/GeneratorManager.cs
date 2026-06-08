@@ -35,6 +35,7 @@ public class GeneratorManager : MonoBehaviour
     // Método público que recebe seed para geração determinística.
     public void Generate(int seed)
     {
+        this.seed = seed;
         Random.InitState(seed);
 
         spawnedRooms.Clear();
@@ -47,33 +48,16 @@ public class GeneratorManager : MonoBehaviour
             return;
         }
 
-        bool startPlaced = false;
-        int startAttempts = 0;
-        while (!startPlaced && startAttempts < maxAttemptsPerRoom)
-        {
-            startAttempts++;
-            RoomData startRoom = Instantiate(
-                startPrefab,
-                Vector3.zero,
-                Quaternion.identity,
-                transform);
 
-            // Verifica se a sala inicial tem pelo menos uma porta livre.
-            if (startRoom.GetRandomFreeDoor() == null)
-            {
-                Destroy(startRoom.gameObject);
-                continue;
-            }
 
-            spawnedRooms.Add(startRoom);
-            startPlaced = true;
-        }
+        RoomData startRoom = Instantiate(
+            startPrefab,
+            Vector3.zero,
+            Quaternion.identity,
+            transform);
 
-        if (!startPlaced)
-        {
-            Debug.LogWarning("Falha ao posicionar a sala inicial após tentativas.");
-            return;
-        }
+
+        spawnedRooms.Add(startRoom);
 
         // Gera as salas intermediárias e tenta garantir a última sala ser colocada e conectada.
         for (int i = 1; i < roomCount; i++)
