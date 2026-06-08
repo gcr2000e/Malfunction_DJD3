@@ -130,6 +130,12 @@ public class GeneratorManager : MonoBehaviour
             newRoom,
             newDoor);
 
+        if (RoomOverlaps(newRoom))
+        {
+            Destroy(newRoom.gameObject);
+            return false;
+        }
+
         existingDoor.connected = true;
         newDoor.connected = true;
 
@@ -174,6 +180,12 @@ public class GeneratorManager : MonoBehaviour
 
             AlignRoom(existingDoor, newRoom, newDoor);
 
+            if (RoomOverlaps(newRoom))
+            {
+                Destroy(newRoom.gameObject);
+                continue;
+            }
+
             // Marca como conectadas
             existingDoor.connected = true;
             newDoor.connected = true;
@@ -206,5 +218,30 @@ public class GeneratorManager : MonoBehaviour
             roomDoor.transform.position;
 
         room.transform.position += offset;
+    }
+
+    private bool RoomOverlaps(RoomData room)
+    {
+        if (room.roomBounds == null)
+            return false;
+
+        Bounds bounds = room.roomBounds.bounds;
+
+        foreach (RoomData other in spawnedRooms)
+        {
+            if(other == room)
+                continue;
+
+            if (other.roomBounds == null)
+                continue;
+
+            if (bounds.Intersects(other.roomBounds.bounds))
+            {
+                Debug.Log($"Overlap entre {room.name} e {other.name}");
+                return true;
+            }
+        }
+
+        return false;
     }
 }
