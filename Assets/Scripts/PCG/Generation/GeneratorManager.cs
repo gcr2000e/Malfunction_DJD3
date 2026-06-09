@@ -222,24 +222,20 @@ public class GeneratorManager : MonoBehaviour
 
     private bool RoomOverlaps(RoomData room)
     {
-        if (room.roomBounds == null)
-            return false;
-
         Bounds bounds = room.roomBounds.bounds;
+
+        bounds.Expand(-0.5f);
 
         foreach (RoomData other in spawnedRooms)
         {
-            if(other == room)
+            if (other == room)
                 continue;
 
-            if (other.roomBounds == null)
-                continue;
+            Bounds otherBounds = other.roomBounds.bounds;
+            otherBounds.Expand(-0.5f);
 
-            if (bounds.Intersects(other.roomBounds.bounds))
-            {
-                Debug.Log($"Overlap entre {room.name} e {other.name}");
+            if (bounds.Intersects(otherBounds))
                 return true;
-            }
         }
 
         return false;
