@@ -109,6 +109,6 @@ public class InteractionUI : MonoBehaviour
         if (promptInteracao) promptInteracao.SetActive(mostrar);
 
         if (textoPrompt && mostrar)
-            textoPrompt.text = $"[E] Interagir com {nomeObjeto}";
+            textoPrompt.text = $"Open [E]";
     }
 }
