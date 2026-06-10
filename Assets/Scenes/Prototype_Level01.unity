@@ -1311,6 +1311,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2308766495482436033, guid: c346faeb5b6c42a4a907e20b981b81cc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.00002336502
+      objectReference: {fileID: 0}
     - target: {fileID: 3327614419683107912, guid: c346faeb5b6c42a4a907e20b981b81cc, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1337,11 +1341,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3327614419683107912, guid: c346faeb5b6c42a4a907e20b981b81cc, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 191.65051
+      value: 133.5537
       objectReference: {fileID: 0}
     - target: {fileID: 3327614419683107912, guid: c346faeb5b6c42a4a907e20b981b81cc, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 39.250916
+      value: 20.3357
       objectReference: {fileID: 0}
     - target: {fileID: 3327614419683107912, guid: c346faeb5b6c42a4a907e20b981b81cc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1373,11 +1377,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3327614419683107912, guid: c346faeb5b6c42a4a907e20b981b81cc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 28.199951
+      value: 122.7
       objectReference: {fileID: 0}
     - target: {fileID: 3327614419683107912, guid: c346faeb5b6c42a4a907e20b981b81cc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -70.151
+      value: -49.815
       objectReference: {fileID: 0}
     - target: {fileID: 3327614419683107912, guid: c346faeb5b6c42a4a907e20b981b81cc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2240,7 +2244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 1
+  m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
@@ -3379,14 +3383,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7810619335822675398, guid: a4ef3714776174943b7a9fce2f5566c9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8983028397840582380, guid: a4ef3714776174943b7a9fce2f5566c9, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8983028397840582380, guid: a4ef3714776174943b7a9fce2f5566c9, type: 3}
-      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
