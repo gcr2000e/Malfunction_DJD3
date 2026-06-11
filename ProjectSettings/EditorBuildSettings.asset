@@ -8,12 +8,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: 123249f7802b9474bbcd72eaa6ef4a67
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Prototype_Level01.unity
     guid: faadd12c96d1dc24dbd0fe29ab57d216
-  - enabled: 1
-    path: Assets/Scenes/Prototype_Ani_2.unity
-    guid: 7fdbcd93c6dca0447932e00a35daa547
+  - enabled: 0
+    path: Assets/Scenes/Prototype_Level02.unity
+    guid: 6fe9168feb1dd10458dd8d31f6929ed9
+  - enabled: 0
+    path: Assets/Scenes/Prototype_Level03.unity
+    guid: a388742e704843445ac967c7244f7495
+  - enabled: 0
+    path: Assets/Scenes/Character - Trailer.unity
+    guid: 88f4f7835f5b8564689474e48214d510
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
