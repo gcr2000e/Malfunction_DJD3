@@ -14,9 +14,6 @@ public class RoomControl : MonoBehaviour
         // Check if it is colliding with the player themselves
         if (other.GetComponent<PlayerMovement>() != null)
         {
-            // Make it so game can't be saved while in combat
-            FindAnyObjectByType<SaveSystem>()
-                .SetSaveStatus(false);
             // Close doors
             foreach (DoorControl door in doors)
                 door.Close();
@@ -30,9 +27,6 @@ public class RoomControl : MonoBehaviour
         {
             foreach (DoorControl door in doors)
                 door.Open();
-            // Autosave when combat is over
-            FindAnyObjectByType<SaveSystem>()
-                .AutoSave();
             // Disable Game Object to avoid redoing the command
             gameObject.SetActive(false);
         }

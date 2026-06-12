@@ -3,38 +3,24 @@ using UnityEngine.SceneManagement;
 
 public class SaveSystem : MonoBehaviour
 {
-    private string currentLevel;
-    private bool canSave = true;
-
     private PlayerCombat pCombat;
     private PlayerHealth pHealth;
+
+    private EnemyManager eManager;
 
     private void Start()
     {
         pCombat = FindAnyObjectByType<PlayerCombat>();
         pHealth = FindAnyObjectByType<PlayerHealth>();
-        SetLevel();
-    }
-
-    public void SetLevel()
-    {
-        currentLevel = SceneManager.GetActiveScene().name;
-    }
-
-    public void SetSaveStatus(bool status)
-    {
-        canSave = status;
-    }
-
-    public void AutoSave()
-    {
-        SetSaveStatus(true);
-        SaveGame();
+        eManager = FindAnyObjectByType<EnemyManager>();
     }
 
     public void SaveGame()
     {
         float currentAtkBonus = pCombat.AtkBonus;
         int currentHealth = pHealth.CurrentHealth;
+        Vector3 playerPos = pCombat.transform.position;
+        bool[] aliveEnemies = eManager.GetDeadEnemies();
+        string currentLevel = SceneManager.GetActiveScene().name;
     }
 }
