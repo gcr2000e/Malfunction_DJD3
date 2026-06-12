@@ -1,28 +1,24 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SaveSystem : MonoBehaviour
 {
-    private int currentLevel;
+    private string currentLevel;
     private bool canSave = true;
 
     private PlayerCombat pCombat;
     private PlayerHealth pHealth;
-    private GeneratorManager pcg;
 
     private void Start()
     {
         pCombat = FindAnyObjectByType<PlayerCombat>();
         pHealth = FindAnyObjectByType<PlayerHealth>();
-        pcg = FindAnyObjectByType<GeneratorManager>();
-
-        // If no save game then generate random
-        pcg.Generate();
-        // If there is a save game generate with the seed
+        SetLevel();
     }
 
-    public void SetLevel(int level)
+    public void SetLevel()
     {
-        currentLevel = level;
+        currentLevel = SceneManager.GetActiveScene().name;
     }
 
     public void SetSaveStatus(bool status)
