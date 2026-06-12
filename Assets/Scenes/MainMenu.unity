@@ -53524,7 +53524,7 @@ MonoBehaviour:
   qualityDropdown: {fileID: 6912109347443003498}
   fullScreenToggle: {fileID: 234702511045973323}
   confirmationPrompt: {fileID: 5478165771545538632}
-  _newGameLevel: Prototype_Level01
+  _newGameLevel: Level01
   resolutionDropdown: {fileID: 6690767244778539533}
 --- !u!1001 &1442573239
 PrefabInstance:
