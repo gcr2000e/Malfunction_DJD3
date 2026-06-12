@@ -66,15 +66,19 @@ public abstract class IEnemy : MonoBehaviour
                     DoMovement();
             }
         }
+        else
+        {
+            animator.SetBool("Moving", false);
+        }
     }
 
     private void ModelRotation()
     {
         Vector3 lookAtPos = target.position;
-        lookAtPos.y = model.transform.position.y;
+        lookAtPos.y = transform.position.y;
 
         // Apply rotation to model
-        model.transform.LookAt(lookAtPos);
+        transform.LookAt(lookAtPos);
     }
 
     private bool InRange()
@@ -106,7 +110,7 @@ public abstract class IEnemy : MonoBehaviour
             // Origin
             transform.position
             // Avoid clipping the floor
-            + Vector3.up,
+            + Vector3.up * 0.7f,
             // Direction
             rayDir.normalized,
             // Hit

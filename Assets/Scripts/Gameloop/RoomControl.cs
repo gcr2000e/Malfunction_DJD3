@@ -23,6 +23,7 @@ public class RoomControl : MonoBehaviour
         }
     }
 
+    // Change to use events
     private void Update()
     {
         if (enemies.All(enemy => enemy == null))

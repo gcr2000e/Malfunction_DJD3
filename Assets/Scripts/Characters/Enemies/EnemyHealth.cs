@@ -23,6 +23,6 @@ public class EnemyHealth : IHealth
 
     protected override void OnDeath()
     {
-        Destroy(gameObject);
+        animator.SetTrigger("Death");
     }
 }

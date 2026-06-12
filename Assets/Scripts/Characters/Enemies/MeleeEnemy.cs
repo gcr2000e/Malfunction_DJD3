@@ -22,5 +22,6 @@ public class MeleeEnemy : IEnemy
         cc.Move(moveSpeed * Time.deltaTime * model.transform.forward);
         // Do move anim
         animator.SetBool("CanAttack", false);
+        animator.SetBool("Moving", true);
     }
 }
