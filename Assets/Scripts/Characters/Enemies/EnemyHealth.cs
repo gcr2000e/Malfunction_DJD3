@@ -3,6 +3,9 @@ using UnityEngine;
 public class EnemyHealth : IHealth
 {
     private Animator animator;
+    private bool isAlive;
+    public bool IsAlive 
+    { get { return isAlive; } }
 
     protected override void Start()
     {
@@ -24,5 +27,13 @@ public class EnemyHealth : IHealth
     protected override void OnDeath()
     {
         animator.SetTrigger("Death");
+    }
+
+    public void LoadEnemy(bool isAlive)
+    {
+        if (!isAlive)
+        {
+            OnDeath();
+        }
     }
 }
