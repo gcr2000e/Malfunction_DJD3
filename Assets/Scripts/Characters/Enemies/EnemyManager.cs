@@ -15,6 +15,9 @@ public class EnemyManager : MonoBehaviour
     public void LoadEnemies(bool[] aliveEnemies)
     {
         int i = 0;
+        Debug.Log(enemyList.Length);
+        Debug.Log(aliveEnemies.Length);
+        Debug.Log(aliveEnemies[0]);
         foreach (EnemyHealth enemy in enemyList)
         {
             enemy.LoadEnemy(aliveEnemies[i]);

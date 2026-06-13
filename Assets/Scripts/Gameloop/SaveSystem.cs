@@ -19,6 +19,8 @@ public class SaveSystem : MonoBehaviour
         pCombat = FindAnyObjectByType<PlayerCombat>();
         pHealth = FindAnyObjectByType<PlayerHealth>();
         eManager = FindAnyObjectByType<EnemyManager>();
+
+        LoadGame();
     }
 
     public void SaveGame()

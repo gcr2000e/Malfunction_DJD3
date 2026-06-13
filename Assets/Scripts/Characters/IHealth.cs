@@ -32,7 +32,7 @@ public abstract class IHealth : MonoBehaviour
 
     protected abstract void OnDeath();
 
-    protected virtual void Start()
+    protected virtual void Awake()
     {
         // Set current health to match max health
         currentHealth = maxHealth;
