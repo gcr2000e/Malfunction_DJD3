@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Character - Trailer.unity
     guid: 88f4f7835f5b8564689474e48214d510
+  - enabled: 1
+    path: Assets/Scenes/CreditsScene.unity
+    guid: 60178c1475607c84d987d1c73191f45d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
