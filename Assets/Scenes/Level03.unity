@@ -1951,6 +1951,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992735555335631319, guid: c346faeb5b6c42a4a907e20b981b81cc, type: 3}
+      propertyPath: m_Value
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8500495155505786536, guid: c346faeb5b6c42a4a907e20b981b81cc, type: 3}
       propertyPath: m_Name
       value: EMPBar
