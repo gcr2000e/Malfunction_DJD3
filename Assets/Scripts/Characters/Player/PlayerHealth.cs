@@ -41,7 +41,7 @@ public class PlayerHealth : IHealth
         currentHealth = 0;
 
         // Do Death sequence here
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void SetHealth(int health, int maxHealth)
