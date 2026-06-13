@@ -1,7 +1,8 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using System.Collections;
 
 public class CreditsScroll : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class CreditsScroll : MonoBehaviour
         LayoutRebuilder.ForceRebuildLayoutImmediate(creditsContainer);
 
         // Final Y
-        endY = creditsContainer.rect.height + Screen.height;
+        endY = creditsContainer.rect.height + Screen.height + 1;
 
         // No fade at start
         if (fadeCanvas != null)
@@ -45,7 +46,7 @@ public class CreditsScroll : MonoBehaviour
             StartCoroutine(FadeAndExit());
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (InputSystem.actions["SkipCredits"].WasPressedThisDynamicUpdate())
         {
             SceneManager.LoadScene(menuSceneName);
         }

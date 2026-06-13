@@ -79388,7 +79388,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -445, y: -3605}
+  m_AnchoredPosition: {x: -445, y: -2586}
   m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2487972209166541714
@@ -79408,7 +79408,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2538372520545404769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79486,16 +79486,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "The Sleep Experiment\u2122\n\nOriginal Idea - Tomas Real, Goncalo Ribeiro,
-    Ines Gomes, Daniela Peixoto\n\nArtist Dep\r\n\r\nGoncalo Ribeiro - 3D Artist\r\n\r\nTomas
-    Real - 3D Artist\n\nDaniela Peixoto - 3D Artist\r\n\r\nGoncalo Ribeiro - Environment
-    Artist\n\nTomas Real - Environment Artist\n\nSci-FI Chair -  Darren McNerney
-    3D(Sketchfab)\n\nSci-Fi Table - nenkea(Sketchfab)\r\n\r\nDevelopment Dep\r\n\r\nInes
-    Gomes - Combat System\r\n\r\nGoncalo Ribeiro -System Dev & Sound Dev\n\nInes
-    Gomes - Save System & System Dev\n\nGoncalo Ribeiro - AI Dev\r\n\r\nDesign Dep\r\n\r\nTom\xE1s
-    Real - Game Designer\r\n\r\nGon\xE7alo Ribeiro - Game Designer\n\nInes Gomes
-    - Game Designer\n\nDaniela Peixoto - Game Designer\r\n\nA game created by Silent
-    Orbit Games Team and powered by ULHT\n\r\n\n\n\n\n\n\n\n\n\n\r\nCopyrights \xA92026
+  m_text: "Malfunction\u2122\n\nOriginal Idea - Tomas Real, Goncalo Ribeiro, Ines
+    Gomes, Daniela Peixoto\n\nArtist Dep\r\nGoncalo Ribeiro - 3D Artist\r\nTomas
+    Real - 3D Artist\nDaniela Peixoto - 3D Artist\r\nGoncalo Ribeiro - Environment
+    Artist\nTomas Real - Environment Artist\nSci-FI Chair -  Darren McNerney 3D(Sketchfab)\nSci-Fi
+    Table - nenkea(Sketchfab)\r\n\r\nDevelopment Dep\r\nInes Gomes - Combat System\r\nGoncalo
+    Ribeiro -System Dev & Sound Dev\nInes Gomes - Save System & System Dev\nGoncalo
+    Ribeiro - AI Dev\r\n\r\nDesign Dep\r\nTomas Real - Game Designer\r\nGoncalo Ribeiro
+    - Game Designer\nInes Gomes - Game Designer\nDaniela Peixoto - Game Designer\r\n\nA
+    game created by Silent Orbit Games Team and powered by ULHT\n\r\nCopyrights \xA92026
     Silent Orbit Games, All Rights Reserved.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 64f609f2eb97e4646b17fa33626ed906, type: 2}
@@ -79608,7 +79607,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &4536179040004925046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79673,7 +79672,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 427, y: -3605}
+  m_AnchoredPosition: {x: 427, y: -2586}
   m_SizeDelta: {x: 1127.67, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &5856379121442265962
