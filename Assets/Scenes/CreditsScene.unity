@@ -79388,7 +79388,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -445, y: -2586}
+  m_AnchoredPosition: {x: -445, y: -2940}
   m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2487972209166541714
@@ -79408,7 +79408,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2538372520545404769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79486,16 +79486,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "The Sleep Experiment\u2122\n\nOriginal Idea - Tomas Real, Goncalo Ribeiro,
-    Ines Gomes, Daniela Peixoto\n\nArtist Dep\n\nGoncalo Ribeiro - 3D Artist\n\nTomas
-    Real - 3D Artist\n\nDaniela Peixoto - 3D Artist\n\nGoncalo Ribeiro - Environment
-    Artist\n\nTomas Real - Environment Artist\n\nSci-FI Chair -  Darren McNerney
-    3D(Sketchfab)\n\nSci-Fi Table - nenkea(Sketchfab)\n\nDevelopment Dep\n\nInes
-    Gomes - Player Movement & Combat\n\nInes Gomes - Enemy Movement & Combat\n\nInes
-    Gomes - Game Loop & Progression\n\nInes Gomes - Save System & System Dev\n\nGoncalo
-    Ribeiro -System Dev & Sound Dev\n\nDesign Dep\n\nTom\xE1s Real - Game Designer\n\nGon\xE7alo
-    Ribeiro - Game Designer\n\nInes Gomes - Game Designer\n\nDaniela Peixoto - Game
-    Designer\n\nA game created by Silent Orbit Games Team and powered by ULHT\n\n\n\n\n\n\n\n\n\n\n\nCopyrights
+  m_text: "Malfunction\u2122\n\nOriginal Idea - Tomas Real, Goncalo Ribeiro, Ines
+    Gomes, Daniela Peixoto\n\nArtist Dep\nGoncalo Ribeiro - 3D Artist\nTomas Real
+    - 3D Artist\nDaniela Peixoto - 3D Artist\nGoncalo Ribeiro - Environment Artist\nTomas
+    Real - Environment Artist\nSci-FI Chair -  Darren McNerney 3D(Sketchfab)\nSci-Fi
+    Table - nenkea(Sketchfab)\n\nDevelopment Dep\nInes Gomes - Player Movement &
+    Combat\nInes Gomes - Enemy Movement & Combat\nInes Gomes - Game Loop & Progression\nInes
+    Gomes - Save System & System Dev\nGoncalo Ribeiro -System Dev & Sound Dev\nGoncalo
+    Ribeiro - AI Dev\n\nDesign Dep\nTomas Real - Game Designer\nGoncalo Ribeiro -
+    Game Designer\nInes Gomes - Game Designer\nDaniela Peixoto - Game Designer\n\nA
+    game created by Silent Orbit Game team and powered by ULHT\n\n\n\n\n\n\n\n\n\nCopyrights
     \xA92026 Silent Orbit Games, All Rights Reserved.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 64f609f2eb97e4646b17fa33626ed906, type: 2}
@@ -79608,7 +79608,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &4536179040004925046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79673,7 +79673,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 427, y: -2586}
+  m_AnchoredPosition: {x: 427, y: -2940}
   m_SizeDelta: {x: 1127.67, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &5856379121442265962

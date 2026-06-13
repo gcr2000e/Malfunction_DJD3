@@ -20,13 +20,14 @@ public class CreditsScroll : MonoBehaviour
 
     void Start()
     {
+        StartCoroutine(EnableExitButton());
         exitButton.gameObject.SetActive(false);
         // Force layout update to get correct height
         Canvas.ForceUpdateCanvases();
         LayoutRebuilder.ForceRebuildLayoutImmediate(creditsContainer);
 
         // Final Y
-        endY = creditsContainer.rect.height + Screen.height + 1;
+        endY = creditsContainer.rect.height + (Screen.height * 2.5f);
 
         // No fade at start
         if (fadeCanvas != null)
@@ -35,8 +36,6 @@ public class CreditsScroll : MonoBehaviour
 
     void Update()
     {
-        StartCoroutine(EnableExitButton());
-
         if (fading) return;
 
         creditsContainer.anchoredPosition += Vector2.up * scrollSpeed * Time.deltaTime;
