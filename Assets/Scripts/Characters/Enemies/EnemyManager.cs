@@ -7,17 +7,18 @@ public class EnemyManager : MonoBehaviour
 
     private void Awake()
     {
-        enemyList = 
+        enemyList =
             FindObjectsByType<EnemyHealth>
-            (FindObjectsSortMode.InstanceID);
+            (FindObjectsSortMode.None)
+                .OrderBy(e => e.transform.position.x)
+                .ThenBy(e => e.transform.position.y)
+                .ThenBy(e => e.transform.position.z)
+                .ToArray();
     }
 
     public void LoadEnemies(bool[] aliveEnemies)
     {
         int i = 0;
-        Debug.Log(enemyList.Length);
-        Debug.Log(aliveEnemies.Length);
-        Debug.Log(aliveEnemies[0]);
         foreach (EnemyHealth enemy in enemyList)
         {
             enemy.LoadEnemy(aliveEnemies[i]);
