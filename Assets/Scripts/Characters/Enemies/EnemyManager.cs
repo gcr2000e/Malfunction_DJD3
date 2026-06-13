@@ -5,7 +5,7 @@ public class EnemyManager : MonoBehaviour
 {
     private EnemyHealth[] enemyList;
 
-    private void Start()
+    private void Awake()
     {
         enemyList = 
             FindObjectsByType<EnemyHealth>
@@ -18,11 +18,14 @@ public class EnemyManager : MonoBehaviour
         foreach (EnemyHealth enemy in enemyList)
         {
             enemy.LoadEnemy(aliveEnemies[i]);
+            i++;
         }
     }
 
     public bool[] GetDeadEnemies()
     {
-        return enemyList.Select(enemy => enemy.IsAlive) as bool[];
+        return enemyList
+            .Select(enemy => enemy.IsAlive)
+            .ToArray();
     }
 }
