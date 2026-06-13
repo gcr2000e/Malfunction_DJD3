@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6474935868809691876}
   - component: {fileID: 283648506227880483}
-  - component: {fileID: 4839223732875090875}
   - component: {fileID: 8971128704082372288}
   m_Layer: 0
   m_Name: PersistentData
@@ -46,20 +45,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a56dadbac41d96143a0a66d3fc4392f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SaveSystem
---- !u!114 &4839223732875090875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5036913224011188406}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6ed59faa79153b4ba7a7b7ac69a91c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UpgradeManager
-  attackBonus: 1.5
-  healthBonus: 50
 --- !u!114 &8971128704082372288
 MonoBehaviour:
   m_ObjectHideFlags: 0

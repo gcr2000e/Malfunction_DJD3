@@ -78,5 +78,13 @@ public class SaveSystem : MonoBehaviour
             pCombat.Upgrade(pData.currentAtkBonus);
             pHealth.SetHealth(pData.currentHealth, pData.maxHealth);
         }
+
+        SaveGame();
+    }
+
+    public void DeleteSave()
+    {
+        if (File.Exists(savePath))
+            File.Delete(savePath);
     }
 }

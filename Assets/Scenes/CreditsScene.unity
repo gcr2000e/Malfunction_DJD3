@@ -79486,6 +79486,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< HEAD
   m_text: "Malfunction\u2122\n\nOriginal Idea - Tomas Real, Goncalo Ribeiro, Ines
     Gomes, Daniela Peixoto\n\nArtist Dep\r\nGoncalo Ribeiro - 3D Artist\r\nTomas
     Real - 3D Artist\nDaniela Peixoto - 3D Artist\r\nGoncalo Ribeiro - Environment
@@ -79496,6 +79497,19 @@ MonoBehaviour:
     - Game Designer\nInes Gomes - Game Designer\nDaniela Peixoto - Game Designer\r\n\nA
     game created by Silent Orbit Games Team and powered by ULHT\n\r\nCopyrights \xA92026
     Silent Orbit Games, All Rights Reserved.\n"
+=======
+  m_text: "The Sleep Experiment\u2122\n\nOriginal Idea - Tomas Real, Goncalo Ribeiro,
+    Ines Gomes, Daniela Peixoto\n\nArtist Dep\n\nGoncalo Ribeiro - 3D Artist\n\nTomas
+    Real - 3D Artist\n\nDaniela Peixoto - 3D Artist\n\nGoncalo Ribeiro - Environment
+    Artist\n\nTomas Real - Environment Artist\n\nSci-FI Chair -  Darren McNerney
+    3D(Sketchfab)\n\nSci-Fi Table - nenkea(Sketchfab)\n\nDevelopment Dep\n\nInes
+    Gomes - Player Movement & Combat\n\nInes Gomes - Enemy Movement & Combat\n\nInes
+    Gomes - Game Loop & Progression\n\nInes Gomes - Save System & System Dev\n\nGoncalo
+    Ribeiro -System Dev & Sound Dev\n\nDesign Dep\n\nTom\xE1s Real - Game Designer\n\nGon\xE7alo
+    Ribeiro - Game Designer\n\nInes Gomes - Game Designer\n\nDaniela Peixoto - Game
+    Designer\n\nA game created by Silent Orbit Games Team and powered by ULHT\n\n\n\n\n\n\n\n\n\n\n\nCopyrights
+    \xA92026 Silent Orbit Games, All Rights Reserved.\n"
+>>>>>>> 6eb102c5c8590354f18dab97c409bfc2acc36409
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 64f609f2eb97e4646b17fa33626ed906, type: 2}
   m_sharedMaterial: {fileID: 2918313292042987059, guid: 64f609f2eb97e4646b17fa33626ed906, type: 2}
