@@ -44,6 +44,12 @@ public class PlayerHealth : IHealth
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    public void SetHealth(int health, int maxHealth)
+    {
+        currentHealth = health;
+        this.maxHealth = maxHealth;
+    }
+
     private void Update()
     {
         // Invencibility Cheat

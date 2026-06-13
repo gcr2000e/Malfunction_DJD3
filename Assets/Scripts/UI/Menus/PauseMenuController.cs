@@ -10,6 +10,12 @@ public class PauseMenuController : MonoBehaviour
     [Header("Levels To Load")]
     public string _menuScene;
 
+    private SaveSystem saveSystem;
+    private void Start()
+    {
+        saveSystem = FindAnyObjectByType<SaveSystem>();
+    }
+
     void Update()
     {
         if (InputSystem.actions["PauseMenu"].WasPressedThisDynamicUpdate())
@@ -40,9 +46,10 @@ public class PauseMenuController : MonoBehaviour
     }
 
     public void ReturnMenu()
-        {
-            Time.timeScale = 1f;
-            UnityEngine.SceneManagement.SceneManager.LoadScene(_menuScene);
-            Debug.Log("Returned to Menu");
+    {
+        Time.timeScale = 1f;
+        saveSystem.SaveGame();
+        UnityEngine.SceneManagement.SceneManager.LoadScene(_menuScene);
+        Debug.Log("Returned to Menu");
     }
 }
