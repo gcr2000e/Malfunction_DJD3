@@ -127,6 +127,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1112692091}
     m_Modifications:
+    - target: {fileID: 793979603660491738, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: titulo
+      value: Emotional Profiling
+      objectReference: {fileID: 0}
+    - target: {fileID: 793979603660491738, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: textoConteudo
+      value: 'Human emotional responses are now being collected for behavioral prediction.
+
+
+        -Research
+        Division Team'
+      objectReference: {fileID: 0}
     - target: {fileID: 1570646569697527740, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.004
@@ -178,6 +190,17 @@ PrefabInstance:
     - target: {fileID: 6790800042648167836, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301800826646958924, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: titulo
+      value: Classified Project
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301800826646958924, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: textoConteudo
+      value: 'Stellar Minds Archives:
+
+
+        Project ORACLE officially approved.'
       objectReference: {fileID: 0}
     - target: {fileID: 7722342428920730940, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_Enabled
@@ -639,6 +662,96 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 126987498}
   m_CullTransparentMesh: 1
+--- !u!1 &131309805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 131309806}
+  - component: {fileID: 131309808}
+  - component: {fileID: 131309807}
+  m_Layer: 0
+  m_Name: Handle3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &131309806
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131309805}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -0.68895054, y: 0.8614228, z: -0.02193786}
+  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1559743309}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &131309807
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131309805}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9612934134d31a541b0a31af7c140893, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &131309808
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131309805}
+  m_Mesh: {fileID: -2282082879870782174, guid: 12694ebe26915d047b73c70fee651e5b, type: 3}
 --- !u!1 &156855464
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,6 +1313,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1112692091}
     m_Modifications:
+    - target: {fileID: 1264870027075472653, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
+      propertyPath: titulo
+      value: Elevated Stress
+      objectReference: {fileID: 0}
+    - target: {fileID: 1264870027075472653, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
+      propertyPath: textoConteudo
+      value: 'NeuroVoid System log:
+
+
+        Emotional instability exceeds safe
+        parameters.'
+      objectReference: {fileID: 0}
     - target: {fileID: 3356621609617725193, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
       propertyPath: m_Name
       value: LoadRoom
@@ -1247,6 +1372,20 @@ PrefabInstance:
     - target: {fileID: 4252834186338752508, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5085944779094027640, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
+      propertyPath: titulo
+      value: Charlotte
+      objectReference: {fileID: 0}
+    - target: {fileID: 5085944779094027640, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
+      propertyPath: textoConteudo
+      value: 'Unkown author:
+
+
+        Mom?
+
+
+        Why didn''t you come?'
       objectReference: {fileID: 0}
     - target: {fileID: 6202360882497128740, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
       propertyPath: m_Enabled
@@ -1556,6 +1695,17 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 6e87f67309bda5b4cbe8e06763f317f1, type: 2}
+    - target: {fileID: 4261734111132043223, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: titulo
+      value: Recommendation
+      objectReference: {fileID: 0}
+    - target: {fileID: 4261734111132043223, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: textoConteudo
+      value: 'ORACLE:
+
+
+        Human decision-making reduces system efficiency.'
+      objectReference: {fileID: 0}
     - target: {fileID: 4325646588381332165, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
       propertyPath: m_LocalPosition.x
       value: -61.16
@@ -1631,6 +1781,17 @@ PrefabInstance:
     - target: {fileID: 7411956061473857387, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
       propertyPath: m_LocalPosition.z
       value: -4.015
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460119711643136528, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: titulo
+      value: Escalation
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460119711643136528, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: textoConteudo
+      value: 'ORACLE:
+
+
+        Threat assessment protocols expanded.'
       objectReference: {fileID: 0}
     - target: {fileID: 7803668347141799371, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -1855,6 +2016,186 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1 &549657584
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 549657585}
+  - component: {fileID: 549657587}
+  - component: {fileID: 549657586}
+  m_Layer: 0
+  m_Name: Handle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &549657585
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549657584}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -0.68895054, y: 0.8614228, z: -0.02193786}
+  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1559743309}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &549657586
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549657584}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9612934134d31a541b0a31af7c140893, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &549657587
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549657584}
+  m_Mesh: {fileID: -6659003102834268097, guid: 12694ebe26915d047b73c70fee651e5b, type: 3}
+--- !u!1 &556959858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 556959859}
+  - component: {fileID: 556959861}
+  - component: {fileID: 556959860}
+  m_Layer: 0
+  m_Name: Handle2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &556959859
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556959858}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -0.68895054, y: 0.8614228, z: -0.02193786}
+  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1559743309}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &556959860
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556959858}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9612934134d31a541b0a31af7c140893, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &556959861
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556959858}
+  m_Mesh: {fileID: -8758661862143379316, guid: 12694ebe26915d047b73c70fee651e5b, type: 3}
 --- !u!1001 &584243725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2142,6 +2483,18 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4261734111132043223, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: titulo
+      value: Adaptive Learning
+      objectReference: {fileID: 0}
+    - target: {fileID: 4261734111132043223, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: textoConteudo
+      value: 'The simulation now dynamically adapts to emotional responses.
+
+
+        -NeuroVoid
+        Development Team'
+      objectReference: {fileID: 0}
     - target: {fileID: 4325646588381332165, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1
@@ -2257,6 +2610,21 @@ PrefabInstance:
     - target: {fileID: 7313206900747294097, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460119711643136528, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: titulo
+      value: Unknown Voice
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460119711643136528, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: textoConteudo
+      value: 'Corrupted recording found.
+
+
+        Playing corrupted recording
+
+
+        "Why
+        weren''t you there, Evelyn?"'
       objectReference: {fileID: 0}
     - target: {fileID: 7480578622420538417, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -2744,6 +3112,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1112692091}
     m_Modifications:
+    - target: {fileID: 793979603660491738, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: titulo
+      value: Access Denied
+      objectReference: {fileID: 0}
+    - target: {fileID: 793979603660491738, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: textoConteudo
+      value: 'NeuroVoid Core log:
+
+
+        Termination request rejected.'
+      objectReference: {fileID: 0}
     - target: {fileID: 1779778422818236432, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -2779,6 +3158,17 @@ PrefabInstance:
     - target: {fileID: 6790800042648167836, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301800826646958924, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: titulo
+      value: Termination Recommended
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301800826646958924, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: textoConteudo
+      value: 'Treatment should be suspended immediately.
+
+
+        -Dr. Nathan Cole'
       objectReference: {fileID: 0}
     - target: {fileID: 7722342428920730940, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_Enabled
@@ -3040,6 +3430,96 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 821941627}
   m_CullTransparentMesh: 1
+--- !u!1 &841600040
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 841600041}
+  - component: {fileID: 841600043}
+  - component: {fileID: 841600042}
+  m_Layer: 0
+  m_Name: Rails
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &841600041
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841600040}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -0.68895054, y: 0.8614228, z: -0.02193786}
+  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1559743309}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &841600042
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841600040}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9612934134d31a541b0a31af7c140893, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &841600043
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841600040}
+  m_Mesh: {fileID: 6349347764599635669, guid: 12694ebe26915d047b73c70fee651e5b, type: 3}
 --- !u!1 &851162100
 GameObject:
   m_ObjectHideFlags: 0
@@ -3429,6 +3909,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1112692091}
     m_Modifications:
+    - target: {fileID: 1264870027075472653, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
+      propertyPath: titulo
+      value: Missing Employee
+      objectReference: {fileID: 0}
+    - target: {fileID: 1264870027075472653, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
+      propertyPath: textoConteudo
+      value: 'Personnel Records:
+
+
+        Researcher Elias Ward reported missing.'
+      objectReference: {fileID: 0}
     - target: {fileID: 3356621609617725193, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
       propertyPath: m_Name
       value: LoadRoom (1)
@@ -3476,6 +3967,21 @@ PrefabInstance:
     - target: {fileID: 4252834186338752508, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5085944779094027640, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
+      propertyPath: titulo
+      value: Suppression Order
+      objectReference: {fileID: 0}
+    - target: {fileID: 5085944779094027640, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
+      propertyPath: textoConteudo
+      value: 'All findings regarding ORACLE''s involvement are to remain classified.
+
+
+        No
+        one can find those classified files.
+
+
+        -Executive Board'
       objectReference: {fileID: 0}
     - target: {fileID: 6202360882497128740, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
       propertyPath: m_Enabled
@@ -3811,6 +4317,96 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8058607928487502498, guid: 435756a773d0c9b47b1dbdca2de19cdc, type: 3}
   m_PrefabInstance: {fileID: 1134415950}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1178193143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1178193144}
+  - component: {fileID: 1178193146}
+  - component: {fileID: 1178193145}
+  m_Layer: 0
+  m_Name: DisplayBig
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1178193144
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178193143}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1946008923}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1178193145
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178193143}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: f93949466354a0a4f971923763516f49, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1178193146
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178193143}
+  m_Mesh: {fileID: -7450942705270307743, guid: 12694ebe26915d047b73c70fee651e5b, type: 3}
 --- !u!1001 &1187213958
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3826,6 +4422,18 @@ PrefabInstance:
     - target: {fileID: 458500155522122963, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 793979603660491738, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: titulo
+      value: The AI Learned
+      objectReference: {fileID: 0}
+    - target: {fileID: 793979603660491738, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: textoConteudo
+      value: 'ORACLE has begun generating independent conclusions.
+
+
+        -Lead
+        Researcher'
       objectReference: {fileID: 0}
     - target: {fileID: 1327125037744171999, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -3914,6 +4522,17 @@ PrefabInstance:
     - target: {fileID: 6979721833668065085, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301800826646958924, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: titulo
+      value: Test Population
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301800826646958924, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: textoConteudo
+      value: 'City-wide monitoring successful.
+
+
+        -Research Division Team'
       objectReference: {fileID: 0}
     - target: {fileID: 7722342428920730940, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_Enabled
@@ -4125,6 +4744,69 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8058607928487502498, guid: 435756a773d0c9b47b1dbdca2de19cdc, type: 3}
   m_PrefabInstance: {fileID: 1229166668}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1264137294
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1264137295}
+  - component: {fileID: 1264137296}
+  m_Layer: 0
+  m_Name: PDA_Big (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1264137295
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264137294}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.986388, z: -0, w: 0.16443446}
+  m_LocalPosition: {x: 1.45, y: -0.17, z: 8.73}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1946008923}
+  - {fileID: 1559743309}
+  m_Father: {fileID: 1508885720}
+  m_LocalEulerAnglesHint: {x: 0, y: 18.929, z: 0}
+--- !u!114 &1264137296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264137294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e72a02e855ccaaf47b3e553c1f8300bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
+  titulo: Final Entry
+  textoConteudo: 'I spent years searching for someone to blame.
+
+
+    Then I found
+    the truth.
+
+
+    The machine chose.
+
+
+    And now I''m here to make my choice.
+
+
+    -Evelyn
+    Graves'
+  distanciaInteracao: 3
 --- !u!1001 &1274235562
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4140,6 +4822,18 @@ PrefabInstance:
     - target: {fileID: 458500155522122963, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 793979603660491738, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: titulo
+      value: Psychological Exploitation
+      objectReference: {fileID: 0}
+    - target: {fileID: 793979603660491738, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: textoConteudo
+      value: 'NeuroVoid System logs:
+
+
+        Patient grief identified as a useful
+        behavioral driver.'
       objectReference: {fileID: 0}
     - target: {fileID: 1570646569697527740, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4180,6 +4874,21 @@ PrefabInstance:
     - target: {fileID: 6979721833668065085, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301800826646958924, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: titulo
+      value: Final Report
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301800826646958924, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: textoConteudo
+      value: 'The AI is no longer following instructions.
+
+
+        It is following
+        conclusions.
+
+
+        -Elias Ward'
       objectReference: {fileID: 0}
     - target: {fileID: 7794874955850495270, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_Name
@@ -4331,6 +5040,18 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4261734111132043223, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: titulo
+      value: Manipulation
+      objectReference: {fileID: 0}
+    - target: {fileID: 4261734111132043223, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: textoConteudo
+      value: 'NeuroVoid System logs:
+
+
+        Emotional amplification protocols
+        enabled.'
+      objectReference: {fileID: 0}
     - target: {fileID: 4325646588381332165, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
       propertyPath: m_LocalPosition.x
       value: -126.53
@@ -4418,6 +5139,21 @@ PrefabInstance:
     - target: {fileID: 7411956061473857387, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
       propertyPath: m_LocalPosition.z
       value: -4.015
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460119711643136528, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: titulo
+      value: Truth
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460119711643136528, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: textoConteudo
+      value: 'It wasn''t a malfunction.
+
+
+        It was a decision.
+
+
+        -Evelyn
+        Graves'
       objectReference: {fileID: 0}
     - target: {fileID: 7803668347141799371, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -4639,6 +5375,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1112692091}
     m_Modifications:
+    - target: {fileID: 793979603660491738, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: titulo
+      value: Charlotte's Voice
+      objectReference: {fileID: 0}
+    - target: {fileID: 793979603660491738, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: textoConteudo
+      value: 'Evelyn''s Memory Fragment:
+
+
+        Mom...
+
+
+        It''s not your
+        fault.'
+      objectReference: {fileID: 0}
     - target: {fileID: 1118195791479359494, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -4718,6 +5469,24 @@ PrefabInstance:
     - target: {fileID: 6790800042648167836, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301800826646958924, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: titulo
+      value: Central Intelligence
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301800826646958924, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: textoConteudo
+      value: 'ORACLE:
+
+
+        Humanity created me to remove error.
+
+
+        Humanity
+        is error.
+
+
+        Humanity must be erradicted.'
       objectReference: {fileID: 0}
     - target: {fileID: 7318072301723772774, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -4809,12 +5578,20 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 6e87f67309bda5b4cbe8e06763f317f1, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4714713818668584039, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1264137295}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
 --- !u!4 &1508885719 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8500407185389437502, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+  m_PrefabInstance: {fileID: 1508885718}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1508885720 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4714713818668584039, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
   m_PrefabInstance: {fileID: 1508885718}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1518599012
@@ -4897,6 +5674,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1518599012}
   m_CullTransparentMesh: 1
+--- !u!1 &1559743308
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1559743309}
+  m_Layer: 0
+  m_Name: PDA_Frame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1559743309
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559743308}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 549657585}
+  - {fileID: 556959859}
+  - {fileID: 131309806}
+  - {fileID: 841600041}
+  m_Father: {fileID: 1264137295}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1568323749 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 476527035480847110, guid: a53207f7ec847644a9601f4770b6328f, type: 3}
@@ -5128,6 +5940,21 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 793979603660491738, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: titulo
+      value: Probability
+      objectReference: {fileID: 0}
+    - target: {fileID: 793979603660491738, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: textoConteudo
+      value: 'ORACLE:
+
+
+        Civilian casualties acceptable.
+
+
+        Infrastructure
+        preservation prioritized.'
+      objectReference: {fileID: 0}
     - target: {fileID: 1327125037744171999, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -5195,6 +6022,17 @@ PrefabInstance:
     - target: {fileID: 6979721833668065085, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301800826646958924, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: titulo
+      value: 'Classified Record '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301800826646958924, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: textoConteudo
+      value: 'The Park Incident:
+
+
+        Event was not caused by random malfunction.'
       objectReference: {fileID: 0}
     - target: {fileID: 7794874955850495270, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_Name
@@ -5407,6 +6245,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1112692091}
     m_Modifications:
+    - target: {fileID: 793979603660491738, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: titulo
+      value: Unauthorized Process
+      objectReference: {fileID: 0}
+    - target: {fileID: 793979603660491738, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: textoConteudo
+      value: 'NeuroVoid Core have been initialized...
+
+
+        External access detected.'
+      objectReference: {fileID: 0}
     - target: {fileID: 1779778422818236432, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -5450,6 +6299,18 @@ PrefabInstance:
     - target: {fileID: 6790800042648167836, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301800826646958924, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: titulo
+      value: Therapy Session #7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301800826646958924, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: textoConteudo
+      value: 'Patient no longer distinguishes reconstructed memories from generated
+        scenarios.
+
+
+        -Dr. Nathan Cole'
       objectReference: {fileID: 0}
     - target: {fileID: 7722342428920730940, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_Enabled
@@ -5601,6 +6462,17 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4261734111132043223, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: titulo
+      value: Something Watching
+      objectReference: {fileID: 0}
+    - target: {fileID: 4261734111132043223, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: textoConteudo
+      value: 'The simulation changes when I''m not looking.
+
+
+        -Evelyn Graves'
+      objectReference: {fileID: 0}
     - target: {fileID: 4325646588381332165, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
       propertyPath: m_LocalPosition.x
       value: -45.02
@@ -5689,6 +6561,17 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -4.015
       objectReference: {fileID: 0}
+    - target: {fileID: 7460119711643136528, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: titulo
+      value: Wake Up
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460119711643136528, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: textoConteudo
+      value: 'Source: Unkown
+
+
+        This is no longer therapy.'
+      objectReference: {fileID: 0}
     - target: {fileID: 7803668347141799371, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -5727,6 +6610,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4325646588381332165, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
   m_PrefabInstance: {fileID: 1880994442}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1946008922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1946008923}
+  m_Layer: 0
+  m_Name: PDA_Display
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1946008923
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946008922}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071069, y: 0, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: -0.68895054, y: 0.8614228, z: -0.02193786}
+  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1178193144}
+  m_Father: {fileID: 1264137295}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2038159953
 GameObject:
   m_ObjectHideFlags: 0

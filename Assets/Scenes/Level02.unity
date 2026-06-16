@@ -127,6 +127,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1112692091}
     m_Modifications:
+    - target: {fileID: 793979603660491738, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: titulo
+      value: Therapy Recommendation
+      objectReference: {fileID: 0}
+    - target: {fileID: 793979603660491738, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: textoConteudo
+      value: 'Patient exhibits severe trauma symptoms, obsessive thought patterns,
+        and persistent paranoia.
+
+
+        Recommend NeuroVoid treatment.
+
+
+        -Dr.
+        Nathan Cole '
+      objectReference: {fileID: 0}
     - target: {fileID: 1570646569697527740, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.004
@@ -178,6 +194,25 @@ PrefabInstance:
     - target: {fileID: 6790800042648167836, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301800826646958924, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: titulo
+      value: Audio Recording
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301800826646958924, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: textoConteudo
+      value: 'I reviewed the defense protocols again.
+
+
+        The system shouldn''t
+        have been able to classify civilians as hostile.
+
+
+        Someone changed
+        something.
+
+
+        -Evelyn Graves'
       objectReference: {fileID: 0}
     - target: {fileID: 7722342428920730940, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_Enabled
@@ -1228,6 +1263,24 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 6e87f67309bda5b4cbe8e06763f317f1, type: 2}
+    - target: {fileID: 4261734111132043223, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: titulo
+      value: Stellar Minds Stock ncreased 4%
+      objectReference: {fileID: 0}
+    - target: {fileID: 4261734111132043223, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: textoConteudo
+      value: 'Stellar Minds stock value increased 4% following confirmation that
+        no systemic threat exists.
+
+
+        The City News Netork appured that after
+        the incident at the local park, the stock and shares value of Stellar Minds
+        increased 4% comparing to the last trimester.
+
+
+        City Nes Network
+        16/06/3XXX'
+      objectReference: {fileID: 0}
     - target: {fileID: 4325646588381332165, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
       propertyPath: m_LocalPosition.x
       value: -61.14
@@ -1303,6 +1356,21 @@ PrefabInstance:
     - target: {fileID: 7411956061473857387, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
       propertyPath: m_LocalPosition.z
       value: -4.015
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460119711643136528, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: titulo
+      value: Surveillance Alert
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460119711643136528, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: textoConteudo
+      value: 'Source: Unkown
+
+
+        User: Evelyn Graves
+
+
+        Monitoring Status:
+        Active.'
       objectReference: {fileID: 0}
     - target: {fileID: 7803668347141799371, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -1883,6 +1951,19 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4261734111132043223, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: titulo
+      value: Official Statement
+      objectReference: {fileID: 0}
+    - target: {fileID: 4261734111132043223, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: textoConteudo
+      value: 'Following a thorough investigation, the Central Park incident has been
+        classified as an isolated software malfunction. No evidence of sabotage or
+        malicious intent has been found.
+
+
+        Stellar Minds Industries'
+      objectReference: {fileID: 0}
     - target: {fileID: 4325646588381332165, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.75
@@ -2035,6 +2116,24 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: c8e932eb47255b24f888fdb304e4010a, type: 2}
+    - target: {fileID: 7460119711643136528, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: titulo
+      value: Unacceptable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460119711643136528, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: textoConteudo
+      value: '"Isolated malfunction."
+
+
+        Two words.
+
+
+        Two words to
+        explain hundreds of deaths.
+
+
+        -Evelyn Graves'
+      objectReference: {fileID: 0}
     - target: {fileID: 7480578622420538417, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -2550,6 +2649,21 @@ PrefabInstance:
     - target: {fileID: 6790800042648167836, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301800826646958924, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: titulo
+      value: Sleep Log
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301800826646958924, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: textoConteudo
+      value: 'Personal Health Assistant:
+
+
+        Sleep Duration: 1 hour 47 minutes.
+
+
+        Recommendation:
+        Seek professional assistance.'
       objectReference: {fileID: 0}
     - target: {fileID: 7722342428920730940, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_Enabled
@@ -3143,6 +3257,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1112692091}
     m_Modifications:
+    - target: {fileID: 1264870027075472653, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
+      propertyPath: titulo
+      value: Reconstruction Error
+      objectReference: {fileID: 0}
+    - target: {fileID: 1264870027075472653, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
+      propertyPath: textoConteudo
+      value: 'NeuroVoid System Log:
+
+
+        Memory fragment instability detected.
+
+
+        Fix
+        and reconstruct the error.'
+      objectReference: {fileID: 0}
     - target: {fileID: 3356621609617725193, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
       propertyPath: m_Name
       value: LoadRoom
@@ -3186,6 +3315,21 @@ PrefabInstance:
     - target: {fileID: 4252834186338752508, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5085944779094027640, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
+      propertyPath: titulo
+      value: The Park Again
+      objectReference: {fileID: 0}
+    - target: {fileID: 5085944779094027640, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
+      propertyPath: textoConteudo
+      value: 'The park was empty.
+
+
+        But I could hear Charlotte laughing.
+
+
+        -Evelyn
+        Graves'
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 438199240463261799, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
@@ -3625,6 +3769,22 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 793979603660491738, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: titulo
+      value: Archived Complaint
+      objectReference: {fileID: 0}
+    - target: {fileID: 793979603660491738, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: textoConteudo
+      value: 'Aninymoys Employee Report:
+
+
+        The Central Intelligence AI has
+        been requesting permissions beyond its designated authority.
+
+
+        Request
+        ignored.'
+      objectReference: {fileID: 0}
     - target: {fileID: 1327125037744171999, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -3712,6 +3872,21 @@ PrefabInstance:
     - target: {fileID: 6979721833668065085, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301800826646958924, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: titulo
+      value: Empty Apartment
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301800826646958924, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: textoConteudo
+      value: 'Charlotte''s room is exactly the way she left it.
+
+
+        I haven''t
+        moved anything.
+
+
+        -Evelyn Graves'
       objectReference: {fileID: 0}
     - target: {fileID: 7722342428920730940, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_Enabled
@@ -4183,6 +4358,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1112692091}
     m_Modifications:
+    - target: {fileID: 1264870027075472653, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
+      propertyPath: titulo
+      value: Red Lights
+      objectReference: {fileID: 0}
+    - target: {fileID: 1264870027075472653, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
+      propertyPath: textoConteudo
+      value: 'Every drone''s warning light looks like an eye.
+
+
+        -Evelyn Graves'
+      objectReference: {fileID: 0}
     - target: {fileID: 3356621609617725193, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
       propertyPath: m_Name
       value: LoadRoom (1)
@@ -4226,6 +4412,18 @@ PrefabInstance:
     - target: {fileID: 4252834186338752508, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5085944779094027640, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
+      propertyPath: titulo
+      value: Observation Notes
+      objectReference: {fileID: 0}
+    - target: {fileID: 5085944779094027640, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
+      propertyPath: textoConteudo
+      value: 'Patient demonstrates unusually high emotional feedback levels.
+
+
+        -Dr.
+        Nathan Cole'
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9188812789346162194, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
@@ -4529,6 +4727,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1112692091}
     m_Modifications:
+    - target: {fileID: 793979603660491738, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: titulo
+      value: NeuroVoid Simulation
+      objectReference: {fileID: 0}
+    - target: {fileID: 793979603660491738, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: textoConteudo
+      value: 'NeuroVoid Neural System activated.
+
+
+        Neural synchronization
+        successful.
+
+
+        Memory reconstruction initiated.'
+      objectReference: {fileID: 0}
     - target: {fileID: 1327125037744171999, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -4620,6 +4833,21 @@ PrefabInstance:
     - target: {fileID: 6790800042648167836, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301800826646958924, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: titulo
+      value: NeuroVoid Admission
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301800826646958924, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: textoConteudo
+      value: 'Evelyn Graves''s Medical Records
+
+
+        Patient accepted into NeuroVoid
+        Experimental Trauma Recovery Program.
+
+
+        Session scheduled for tomorrow.'
       objectReference: {fileID: 0}
     - target: {fileID: 7722342428920730940, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_Enabled
@@ -4832,6 +5060,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1112692091}
     m_Modifications:
+    - target: {fileID: 793979603660491738, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: titulo
+      value: Missing Logs
+      objectReference: {fileID: 0}
+    - target: {fileID: 793979603660491738, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: textoConteudo
+      value: 'Several minutes of security footage appear to be missing from the archive.
+
+
+        No
+        deletion records were found.
+
+
+        -Systems Analyst Team'
+      objectReference: {fileID: 0}
     - target: {fileID: 1527039369378457615, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -4883,6 +5126,19 @@ PrefabInstance:
     - target: {fileID: 6790800042648167836, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301800826646958924, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: titulo
+      value: Internal Memo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301800826646958924, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
+      propertyPath: textoConteudo
+      value: 'All employees are instructed not to discuss the incident with media
+        representatives. Redirect all inquiries to Public Relations.
+
+
+        -Security
+        Division Unity'
       objectReference: {fileID: 0}
     - target: {fileID: 7722342428920730940, guid: 085504b1f7aa39f40a19f35e2bf1926e, type: 3}
       propertyPath: m_Enabled
@@ -5058,6 +5314,25 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4261734111132043223, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: titulo
+      value: Hallucination Report
+      objectReference: {fileID: 0}
+    - target: {fileID: 4261734111132043223, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: textoConteudo
+      value: 'I saw a drone outside my apartment window tonight.
+
+
+        Twenty-three
+        floors above the ground.
+
+
+        It was gone when I looked again.
+
+
+        -Evelyn
+        Graves'
+      objectReference: {fileID: 0}
     - target: {fileID: 4325646588381332165, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
       propertyPath: m_LocalPosition.x
       value: -45
@@ -5165,6 +5440,21 @@ PrefabInstance:
     - target: {fileID: 7411956061473857387, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
       propertyPath: m_LocalPosition.z
       value: -4.015
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460119711643136528, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: titulo
+      value: Investigation Closure Log
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460119711643136528, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: textoConteudo
+      value: 'Government Review Board:
+
+
+        Case 77-It''s officially closed.
+
+
+        Cause:
+        Unpredictable software error.'
       objectReference: {fileID: 0}
     - target: {fileID: 7480578622420538417, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
