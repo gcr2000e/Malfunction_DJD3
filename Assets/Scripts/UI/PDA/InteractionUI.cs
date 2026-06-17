@@ -15,7 +15,7 @@ public class InteractionUI : MonoBehaviour
     public TextMeshProUGUI textoConteudo;
     public Button botaoFechar;
 
-    [Header("Prompt de Interação (Pressiona E)")]
+    [Header("Prompt de Interação (Press E)")]
     public GameObject promptInteracao;
     public TextMeshProUGUI textoPrompt;
 
@@ -109,6 +109,6 @@ public class InteractionUI : MonoBehaviour
         if (promptInteracao) promptInteracao.SetActive(mostrar);
 
         if (textoPrompt && mostrar)
-            textoPrompt.text = $"Open [E]";
+            textoPrompt.text = $"Open PDA [E]";
     }
 }
