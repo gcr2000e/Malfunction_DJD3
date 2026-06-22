@@ -27,7 +27,7 @@ public class CreditsScroll : MonoBehaviour
         LayoutRebuilder.ForceRebuildLayoutImmediate(creditsContainer);
 
         // Final Y
-        endY = creditsContainer.rect.height + (Screen.height * 2.5f);
+        endY = creditsContainer.rect.height + (Screen.height * 4f);
 
         // No fade at start
         if (fadeCanvas != null)
@@ -45,10 +45,10 @@ public class CreditsScroll : MonoBehaviour
             StartCoroutine(FadeAndExit());
         }
 
-        if (InputSystem.actions["SkipCredits"].WasPressedThisDynamicUpdate())
-        {
-            SceneManager.LoadScene(menuSceneName);
-        }
+        //if (InputSystem.actions["SkipCredits"].WasPressedThisDynamicUpdate())
+        //{
+        //    SceneManager.LoadScene(menuSceneName);
+        //}
     }
 
     public void ExitToMenu()
@@ -74,7 +74,7 @@ public class CreditsScroll : MonoBehaviour
 
     IEnumerator EnableExitButton()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(10);
         exitButton.gameObject.SetActive(true);
     }
 }

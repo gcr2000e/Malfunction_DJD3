@@ -20,8 +20,8 @@ public class MenuController : MonoBehaviour
     [SerializeField] private int defaultSen = 4;
     public int mainControllerSen = 4;
 
-    [Header("Toggle Settings")]
-    [SerializeField] private Toggle invertYToggle = null;
+    //[Header("Toggle Settings")]
+    //[SerializeField] private Toggle invertYToggle = null;
 
     [Header("Graphics Settings")]
     [SerializeField] private Slider brightnessSlider = null;
@@ -112,16 +112,16 @@ public class MenuController : MonoBehaviour
 
     public void GameplayApply()
     {
-        if (invertYToggle.isOn)
-        {
-            PlayerPrefs.SetInt("masterInvertY", 1);
-            //invert Y
-        }
-        else
-        {
-            PlayerPrefs.SetInt("masterInvertY", 0);
-            //Not invert Y
-        }
+        //if (invertYToggle.isOn)
+        //{
+        //    PlayerPrefs.SetInt("masterInvertY", 1);
+        //    //invert Y
+        //}
+        //else
+        //{
+        //    PlayerPrefs.SetInt("masterInvertY", 0);
+        //    //Not invert Y
+        //}
 
         PlayerPrefs.SetFloat("masterSen", mainControllerSen);
         StartCoroutine(ConfirmationBox());
@@ -172,7 +172,7 @@ public class MenuController : MonoBehaviour
             controllerSenTextValue.text = defaultSen.ToString("0");
             controllerSenSlider.value = defaultSen;
             mainControllerSen = defaultSen;
-            invertYToggle.isOn = false;
+            //invertYToggle.isOn = false;
             GameplayApply();
         }
 

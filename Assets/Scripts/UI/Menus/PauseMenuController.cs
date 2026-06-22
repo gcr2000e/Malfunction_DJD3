@@ -5,7 +5,7 @@ public class PauseMenuController : MonoBehaviour
 {
     [Header("Menu Objects")]
     public GameObject _pauseMenuUI;
-    private bool _isPaused = false;
+    public bool _isPaused = false;
 
     [Header("Levels To Load")]
     public string _menuScene;

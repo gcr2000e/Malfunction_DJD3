@@ -27,8 +27,8 @@ public class LoadPrefs : MonoBehaviour
     [SerializeField] private TMP_Text controllerSenTextValue = null;
     [SerializeField] private Slider controllerSenSlider = null;
 
-    [Header("Invert Y Setting")]
-    [SerializeField] private Toggle invertYToggle = null;
+    //[Header("Invert Y Setting")]
+    //[SerializeField] private Toggle invertYToggle = null;
 
     private void Awake()
     {
@@ -88,18 +88,18 @@ public class LoadPrefs : MonoBehaviour
                 menuController.mainControllerSen = Mathf.RoundToInt(localSensitivity);
             }
 
-            if (PlayerPrefs.HasKey("masterInvertY"))
-            {
-                if (PlayerPrefs.GetInt("masterInvertY") == 1)
-                {
-                    invertYToggle.isOn = true;
-                }
+            //if (PlayerPrefs.HasKey("masterInvertY"))
+            //{
+            //    if (PlayerPrefs.GetInt("masterInvertY") == 1)
+            //    {
+            //        invertYToggle.isOn = true;
+            //    }
 
-                else
-                {
-                    invertYToggle.isOn = false;
-                }
-            }
+            //    else
+            //    {
+            //        invertYToggle.isOn = false;
+            //    }
+            //}
         }
     }
 }
