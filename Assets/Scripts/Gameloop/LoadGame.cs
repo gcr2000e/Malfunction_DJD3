@@ -28,6 +28,6 @@ public class LoadGame : MonoBehaviour
             File.Delete(savePath);
         if (File.Exists(persistentDataPath))
             File.Delete(persistentDataPath);
-        SceneManager.LoadScene("Level01");
+        SceneManager.LoadScene("Level02");
     }
 }

@@ -350,6 +350,8 @@ MonoBehaviour:
   gunPoint: {fileID: 8538172235055163614}
   shotForce: 1000
   shotCooldown: 1.5
+  enemyAudio: {fileID: 0}
+  attackAudio: {fileID: 8300000, guid: 2d7b5ca8b27a2fb46bc8273e5d1fe159, type: 3}
 --- !u!95 &1253269347915459614
 Animator:
   serializedVersion: 7

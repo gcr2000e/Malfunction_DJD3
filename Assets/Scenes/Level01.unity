@@ -339,6 +339,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2145629400}
     m_Modifications:
+    - target: {fileID: 960293182529054753, guid: 435756a773d0c9b47b1dbdca2de19cdc, type: 3}
+      propertyPath: enemyAudio
+      value: 
+      objectReference: {fileID: 1023087729}
     - target: {fileID: 8058607928487502498, guid: 435756a773d0c9b47b1dbdca2de19cdc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -31.219997
@@ -1877,18 +1881,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 476527035480847110, guid: a53207f7ec847644a9601f4770b6328f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.6723958
-      objectReference: {fileID: 0}
-    - target: {fileID: 476527035480847110, guid: a53207f7ec847644a9601f4770b6328f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.6723958
-      objectReference: {fileID: 0}
-    - target: {fileID: 476527035480847110, guid: a53207f7ec847644a9601f4770b6328f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.6723958
-      objectReference: {fileID: 0}
-    - target: {fileID: 476527035480847110, guid: a53207f7ec847644a9601f4770b6328f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 17.54746
       objectReference: {fileID: 0}
@@ -1898,7 +1890,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 476527035480847110, guid: a53207f7ec847644a9601f4770b6328f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 33.80533
+      value: 33.3
       objectReference: {fileID: 0}
     - target: {fileID: 476527035480847110, guid: a53207f7ec847644a9601f4770b6328f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1940,10 +1932,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5029237316214152839, guid: a53207f7ec847644a9601f4770b6328f, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 6017982701896492730, guid: a53207f7ec847644a9601f4770b6328f, type: 3}
+      propertyPath: empSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 9be073c9f60a0ea42946cc4546210b2e, type: 3}
+    - target: {fileID: 6017982701896492730, guid: a53207f7ec847644a9601f4770b6328f, type: 3}
+      propertyPath: playerAudio
+      value: 
+      objectReference: {fileID: 2049356172}
+    - target: {fileID: 6523686960935108206, guid: a53207f7ec847644a9601f4770b6328f, type: 3}
+      propertyPath: deathAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 7677c5cfc3fad6f4b8a7789f2213efa8, type: 3}
+    - target: {fileID: 6523686960935108206, guid: a53207f7ec847644a9601f4770b6328f, type: 3}
+      propertyPath: damageAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 8172c55d22e0450498e5e59d326aa4a2, type: 3}
+    - target: {fileID: 6523686960935108206, guid: a53207f7ec847644a9601f4770b6328f, type: 3}
+      propertyPath: playerAudio
+      value: 
+      objectReference: {fileID: 2049356172}
+    - target: {fileID: 9071385692998959460, guid: a53207f7ec847644a9601f4770b6328f, type: 3}
+      propertyPath: attackSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 702deb4777496d54995d211e3b3b79ed, type: 3}
+    - target: {fileID: 9071385692998959460, guid: a53207f7ec847644a9601f4770b6328f, type: 3}
+      propertyPath: playerAudio
+      value: 
+      objectReference: {fileID: 2049356172}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2673,6 +2689,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932708410}
   m_CullTransparentMesh: 1
+--- !u!82 &1023087729 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1591863900312651342, guid: 49780b1ad424dec45b94afe6c129a7b4, type: 3}
+  m_PrefabInstance: {fileID: 4419498801784562374}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1038313208
 GameObject:
   m_ObjectHideFlags: 0
@@ -3458,6 +3479,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1112692091}
     m_Modifications:
+    - target: {fileID: 3791166609289549609, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: enemyAudio
+      value: 
+      objectReference: {fileID: 1023087729}
+    - target: {fileID: 3791166609289549609, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: attackAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 2d7b5ca8b27a2fb46bc8273e5d1fe159, type: 3}
     - target: {fileID: 4325646588381332165, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
       propertyPath: m_LocalPosition.x
       value: 55.1
@@ -3501,6 +3530,10 @@ PrefabInstance:
     - target: {fileID: 6825320001448093781, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
       propertyPath: m_Name
       value: Room 3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108898112085729552, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3709,11 +3742,11 @@ PrefabInstance:
       objectReference: {fileID: 8733429697405204941, guid: 8792c2596a4bb5f4a889d5e32eabf0b7, type: 3}
     - target: {fileID: 55120295282002801, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.999999
+      value: 0.971
       objectReference: {fileID: 0}
     - target: {fileID: 55120295282002801, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.9900002
+      value: -1.034
       objectReference: {fileID: 0}
     - target: {fileID: 55774391379755592, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -4443,6 +4476,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 8733429697405204941, guid: 8792c2596a4bb5f4a889d5e32eabf0b7, type: 3}
+    - target: {fileID: 3791166609289549609, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: enemyAudio
+      value: 
+      objectReference: {fileID: 1023087729}
+    - target: {fileID: 3791166609289549609, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: attackAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 2d7b5ca8b27a2fb46bc8273e5d1fe159, type: 3}
     - target: {fileID: 3797692155733910402, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3
@@ -5537,6 +5578,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &2049356172 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 481508961187094965, guid: 49780b1ad424dec45b94afe6c129a7b4, type: 3}
+  m_PrefabInstance: {fileID: 4419498801784562374}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2083591295
 GameObject:
   m_ObjectHideFlags: 0
@@ -8664,6 +8710,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: LoadRoom
       objectReference: {fileID: 0}
+    - target: {fileID: 3385699052706642177, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
+      propertyPath: enemyAudio
+      value: 
+      objectReference: {fileID: 1023087729}
+    - target: {fileID: 3385699052706642177, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
+      propertyPath: attackAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 2d7b5ca8b27a2fb46bc8273e5d1fe159, type: 3}
     - target: {fileID: 4252834186338752508, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 28.52
@@ -8708,6 +8762,14 @@ PrefabInstance:
       propertyPath: distanciaInteracao
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6776942072597328527, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
+      propertyPath: enemyAudio
+      value: 
+      objectReference: {fileID: 1023087729}
+    - target: {fileID: 6776942072597328527, guid: 410e47c90c715b44b82c93b2a2fbb2c2, type: 3}
+      propertyPath: attackAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 2d7b5ca8b27a2fb46bc8273e5d1fe159, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11102,10 +11164,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
-    - target: {fileID: 5484088671766421865, guid: 49780b1ad424dec45b94afe6c129a7b4, type: 3}
-      propertyPath: MaxDistance
-      value: 16.857979
-      objectReference: {fileID: 0}
     - target: {fileID: 5569087211309756466, guid: 49780b1ad424dec45b94afe6c129a7b4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -11144,10 +11202,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5569087211309756466, guid: 49780b1ad424dec45b94afe6c129a7b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6197728399952284757, guid: 49780b1ad424dec45b94afe6c129a7b4, type: 3}
-      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -14508,6 +14562,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1112692091}
     m_Modifications:
+    - target: {fileID: 3791166609289549609, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: enemyAudio
+      value: 
+      objectReference: {fileID: 1023087729}
+    - target: {fileID: 3791166609289549609, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
+      propertyPath: attackAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 2d7b5ca8b27a2fb46bc8273e5d1fe159, type: 3}
     - target: {fileID: 4325646588381332165, guid: 99db768977fa8f8428faf6dcf69f0963, type: 3}
       propertyPath: m_LocalPosition.x
       value: 26.7

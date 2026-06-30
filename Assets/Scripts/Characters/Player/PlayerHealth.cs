@@ -10,6 +10,9 @@ public class PlayerHealth : IHealth
 
     private bool invincibilityCheat = false;
 
+    [SerializeField] private AudioSource playerAudio;
+    [SerializeField] private AudioClip deathAudio;
+    [SerializeField] private AudioClip damageAudio;
     public override void Heal(int healing)
     {
         // Check if below full hp
@@ -26,6 +29,7 @@ public class PlayerHealth : IHealth
             && !invincible)
         {
             base.Damage(damage);
+            playerAudio.PlayOneShot(damageAudio);
         }
     }
 
@@ -39,6 +43,9 @@ public class PlayerHealth : IHealth
     {
         // Set Health to 0
         currentHealth = 0;
+
+        //Play Death Sound
+        playerAudio.PlayOneShot(deathAudio);
 
         // Do Death sequence here
         SceneManager.LoadScene("MainMenu");

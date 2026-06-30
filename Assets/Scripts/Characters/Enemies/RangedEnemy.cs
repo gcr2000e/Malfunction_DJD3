@@ -16,6 +16,12 @@ public class RangedEnemy : IEnemy
     private float shotCooldown;
     private float timeLastShot;
 
+    [SerializeField]
+    private AudioSource enemyAudio;
+
+    [SerializeField]
+    private AudioClip attackAudio;
+
     protected override void Attack()
     {
         if (Time.time >= timeLastShot + shotCooldown)
@@ -28,6 +34,10 @@ public class RangedEnemy : IEnemy
                 );
             // Make sure it's active
             bullet.SetActive(true);
+
+            //Play attack sound
+            enemyAudio.PlayOneShot(attackAudio);
+
             // Add force to bullet
             bullet.GetComponent<Rigidbody>()
                 .AddForce(model.transform.forward * shotForce);

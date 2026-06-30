@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class MeleeEnemy : IEnemy
 {
+    [SerializeField] AudioSource enemyAudio;
+    [SerializeField] AudioClip attackAudio;
+
     protected override void Start()
     {
         base.Start();
@@ -14,6 +17,9 @@ public class MeleeEnemy : IEnemy
     {
         // Do attack animation
         animator.SetBool("CanAttack", true);
+
+        // Play attack sound
+        //enemyAudio.PlayOneShot(attackAudio);
     }
 
     protected override void DoMovement()

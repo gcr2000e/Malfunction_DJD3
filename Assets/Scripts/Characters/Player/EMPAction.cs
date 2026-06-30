@@ -14,6 +14,12 @@ public class EMPAction : MonoBehaviour
     [SerializeField]
     private GameObject empObject;
 
+    [SerializeField]
+    private AudioSource playerAudio;
+
+    [SerializeField]
+    private AudioClip empSound;
+
     private void Update()
     {
         // EMP charge cheat
@@ -33,6 +39,7 @@ public class EMPAction : MonoBehaviour
         if (currentEnergy >= requiredCharge)
         {
             empObject.SetActive(true);
+            playerAudio.PlayOneShot(empSound);
             currentEnergy = 0;
         }
     }

@@ -20,6 +20,9 @@ public class PlayerCombat : MonoBehaviour
     [SerializeField]
     private bool canAttack = true;
 
+    [SerializeField] private AudioSource playerAudio;
+    [SerializeField] private AudioClip attackSound;
+
     private Animator animator;
 
     private void Start()
@@ -64,6 +67,7 @@ public class PlayerCombat : MonoBehaviour
     private void Attack()
     {
         animator.SetTrigger("Attack");
+        playerAudio.PlayOneShot(attackSound);
     }
 }
 

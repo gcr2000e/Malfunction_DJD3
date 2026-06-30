@@ -83382,7 +83382,7 @@ MonoBehaviour:
   qualityDropdown: {fileID: 4560036001421918942}
   fullScreenToggle: {fileID: 493670762020747033}
   confirmationPrompt: {fileID: 8079973564038104609}
-  _newGameLevel: Level01
+  _newGameLevel: Level02
   resolutionDropdown: {fileID: 4941628635184718061}
 --- !u!222 &3347850246272878193
 CanvasRenderer:

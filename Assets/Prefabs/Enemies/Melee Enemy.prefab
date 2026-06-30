@@ -4608,6 +4608,8 @@ MonoBehaviour:
   attackDistance: 1
   model: {fileID: 4595352527587632468}
   canRotate: 1
+  enemyAudio: {fileID: 0}
+  attackAudio: {fileID: 8300000, guid: 37ad1eb306e41d649ae04fbd3f68f6b7, type: 3}
 --- !u!95 &4329809833952655897
 Animator:
   serializedVersion: 7
